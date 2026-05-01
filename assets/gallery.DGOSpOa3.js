@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.BiVIIhK2.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.D7-AExPd.js","./jszip.HPtxegej.js","./gallery-search.D57mUemw.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.BjxZ-yuP.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./tippy.D2CvuMJV.js","./tippy.CccQYZjX.css","./gallery-root.DbZgvYv3.css","./gallery-collections.3yiCSNrD.js","./gallery-collections.CfEzgue_.css","./gallery-categories.DorpTPT1.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.BxwmOt2H.js","./gallery-series.BUI5za12.css","./gallery-authors.DvfVetDL.js","./gallery-authors.B_KccURD.css","./gallery-narrators.1QDB9VVu.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.CYwYT2bE.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.C0djy6Jp.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.D7-AExPd.js","./jszip.HPtxegej.js","./gallery-search.CYYp1sQO.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.BjxZ-yuP.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./tippy.D2CvuMJV.js","./tippy.CccQYZjX.css","./gallery-root.DbZgvYv3.css","./gallery-collections.DIp7V6FV.js","./gallery-collections.CfEzgue_.css","./gallery-categories.BkfE2vCV.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.CrewGlpC.js","./gallery-series.BUI5za12.css","./gallery-authors.DEtB-v_2.js","./gallery-authors.B_KccURD.css","./gallery-narrators.C9lhWnvm.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.C0ETjOwP.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
 import { m as makeCoverUrl } from './gallery-makeCoverUrl.BnX14Pi7.js';
 import { m as markRaw, o as openBlock, c as createElementBlock, a as createBaseVNode, _ as _export_sfc, w as withDirectives, v as vShow, n as normalizeStyle, b as createVNode, t as toDisplayString, d as createCommentVNode, r as resolveDirective, e as resolveComponent, f as withModifiers, g as normalizeClass, h as createBlock, F as Fragment, i as renderList, j as withCtx, k as normalizeProps, l as resolveDynamicComponent, p as renderSlot, q as createStaticVNode, s as createTextVNode, u as withKeys, x as vModelText, y as vModelCheckbox, z as vModelRadio, A as _$1, B as unref, C as shallowReactive, D as shallowRef, E as defineComponent, G as inject, H as h, I as reactive, J as computed, K as watch, L as ref, M as nextTick, N as provide, O as createApp } from './lodash.Cy6RZ5mX.js';
 import { c as commonjsGlobal, g as getDefaultExportFromCjs } from './jquery.3Hs3vqLI.js';
@@ -8,14 +8,14 @@ import { h as howler } from './howler.B9zQKWVB.js';
 import { e as enUS, c as createStore, m as mitt, p as plugin } from './tippy.D2CvuMJV.js';
 import './jszip.HPtxegej.js';
 
-const _hoisted_1$L = {
+const _hoisted_1$O = {
   viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$x(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$L, [...(_cache[0] || (_cache[0] = [
+function render$A(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$O, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6s2.69-6 6-6v4l5-5l-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8z"
@@ -27,17 +27,17 @@ function render$x(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_4$4 = markRaw({ name: 'ic-baseline-forward30', render: render$x });
+const __unplugin_components_4$5 = markRaw({ name: 'ic-baseline-forward30', render: render$A });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$K = {
+const _hoisted_1$N = {
   viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$w(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$K, [...(_cache[0] || (_cache[0] = [
+function render$z(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$N, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m-1 14H9V8h2zm4 0h-2V8h2z"
@@ -45,17 +45,17 @@ function render$w(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_2$3 = markRaw({ name: 'ic-sharp-pause-circle-filled', render: render$w });
+const __unplugin_components_2$3 = markRaw({ name: 'ic-sharp-pause-circle-filled', render: render$z });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$J = {
+const _hoisted_1$M = {
   viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$v(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$J, [...(_cache[0] || (_cache[0] = [
+function render$y(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$M, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m-2 14.5v-9l6 4.5z"
@@ -63,17 +63,17 @@ function render$v(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_1$a = markRaw({ name: 'ic-sharp-play-circle-filled', render: render$v });
+const __unplugin_components_1$a = markRaw({ name: 'ic-sharp-play-circle-filled', render: render$y });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$I = {
+const _hoisted_1$L = {
   viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$u(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$I, [...(_cache[0] || (_cache[0] = [
+function render$x(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$L, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6s-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8"
@@ -85,7 +85,7 @@ function render$u(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_3$6 = markRaw({ name: 'ic-baseline-replay30', render: render$u });
+const __unplugin_components_3$6 = markRaw({ name: 'ic-baseline-replay30', render: render$x });
 /* vite-plugin-components disabled */
 
 var vueSliderComponent_umd_min = {exports: {}};
@@ -143,7 +143,7 @@ const _sfc_main$f = {
   
 };
 
-const _hoisted_1$H = { id: "audio-player" };
+const _hoisted_1$K = { id: "audio-player" };
 const _hoisted_2$a = { class: "inner-wrap" };
 const _hoisted_3$7 = { class: "cover-wrap" };
 const _hoisted_4$7 = { class: "cover-inner-wrap" };
@@ -167,10 +167,10 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ic_baseline_replay_30 = __unplugin_components_3$6;
   const _component_ic_sharp_play_circle_filled = __unplugin_components_1$a;
   const _component_ic_sharp_pause_circle_filled = __unplugin_components_2$3;
-  const _component_ic_baseline_forward_30 = __unplugin_components_4$4;
+  const _component_ic_baseline_forward_30 = __unplugin_components_4$5;
   const _directive_touch = resolveDirective("touch");
 
-  return withDirectives((openBlock(), createElementBlock("div", _hoisted_1$H, [
+  return withDirectives((openBlock(), createElementBlock("div", _hoisted_1$K, [
     createBaseVNode("div", _hoisted_2$a, [
       createBaseVNode("div", _hoisted_3$7, [
         _cache[6] || (_cache[6] = createBaseVNode("div", { class: "close-instructions" }, [
@@ -266,14 +266,14 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const __unplugin_components_3$5 = /*#__PURE__*/_export_sfc(_sfc_main$f, [['render',_sfc_render$f],['__scopeId',"data-v-45479eb3"]]);
 
-const _hoisted_1$G = {
+const _hoisted_1$J = {
   viewBox: "0 0 320 512",
   width: "0.76em",
   height: "1.2em"
 };
 
-function render$t(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$G, [...(_cache[0] || (_cache[0] = [
+function render$w(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$J, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256L34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941"
@@ -281,17 +281,17 @@ function render$t(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$b = markRaw({ name: 'fa-solid-chevron-right', render: render$t });
+const __unplugin_components_0$b = markRaw({ name: 'fa-solid-chevron-right', render: render$w });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$F = {
+const _hoisted_1$I = {
   viewBox: "0 0 320 512",
   width: "0.76em",
   height: "1.2em"
 };
 
-function render$s(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$F, [...(_cache[0] || (_cache[0] = [
+function render$v(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$I, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94"
@@ -299,7 +299,7 @@ function render$s(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$a = markRaw({ name: 'fa-solid-chevron-left', render: render$s });
+const __unplugin_components_0$a = markRaw({ name: 'fa-solid-chevron-left', render: render$v });
 /* vite-plugin-components disabled */
 
 /* unplugin-vue-components disabled */
@@ -342,14 +342,14 @@ function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const __unplugin_components_2$2 = /*#__PURE__*/_export_sfc(_sfc_main$e, [['render',_sfc_render$e],['__scopeId',"data-v-e15dd04d"]]);
 
-const _hoisted_1$E = {
+const _hoisted_1$H = {
   viewBox: "0 0 448 512",
   width: "1.06em",
   height: "1.2em"
 };
 
-function render$r(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$E, [...(_cache[0] || (_cache[0] = [
+function render$u(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$H, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16m0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16m0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16"
@@ -357,17 +357,17 @@ function render$r(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_3$4 = markRaw({ name: 'fa-solid-bars', render: render$r });
+const __unplugin_components_3$4 = markRaw({ name: 'fa-solid-bars', render: render$u });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$D = {
+const _hoisted_1$G = {
   viewBox: "0 0 256 256",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$q(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$D, [...(_cache[0] || (_cache[0] = [
+function render$t(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$G, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M240 128a15.74 15.74 0 0 1-7.6 13.51L88.32 229.65a16 16 0 0 1-16.2.3A15.86 15.86 0 0 1 64 216.13V39.87a15.86 15.86 0 0 1 8.12-13.82a16 16 0 0 1 16.2.3l144.08 88.14A15.74 15.74 0 0 1 240 128"
@@ -375,17 +375,17 @@ function render$q(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_1$9 = markRaw({ name: 'ph-play-fill', render: render$q });
+const __unplugin_components_1$9 = markRaw({ name: 'ph-play-fill', render: render$t });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$C = {
+const _hoisted_1$F = {
   viewBox: "0 0 512 512",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$p(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$C, [...(_cache[0] || (_cache[0] = [
+function render$s(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$F, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34M208 336c-70.7 0-128-57.2-128-128c0-70.7 57.2-128 128-128c70.7 0 128 57.2 128 128c0 70.7-57.2 128-128 128"
@@ -393,7 +393,7 @@ function render$p(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$9 = markRaw({ name: 'fa-solid-search', render: render$p });
+const __unplugin_components_0$9 = markRaw({ name: 'fa-solid-search', render: render$s });
 /* vite-plugin-components disabled */
 
 /* unplugin-vue-components disabled */
@@ -422,7 +422,7 @@ const _sfc_main$d = {
   
 };
 
-const _hoisted_1$B = { class: "second-row" };
+const _hoisted_1$E = { class: "second-row" };
 
 function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_fa_solid_search = __unplugin_components_0$9;
@@ -434,7 +434,7 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     id: "mobile-menu-floaters",
     class: normalizeClass({ mobile: $props.mobileMenuOpen })
   }, [
-    createBaseVNode("div", _hoisted_1$B, [
+    createBaseVNode("div", _hoisted_1$E, [
       (_ctx.$store.state.searchMounted && !$props.mobileMenuOpen)
         ? (openBlock(), createElementBlock("div", {
             key: 0,
@@ -469,14 +469,14 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const __unplugin_components_1$8 = /*#__PURE__*/_export_sfc(_sfc_main$d, [['render',_sfc_render$d]]);
 
-const _hoisted_1$A = {
+const _hoisted_1$D = {
   viewBox: "0 0 352 512",
   width: "0.83em",
   height: "1.2em"
 };
 
-function render$o(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$A, [...(_cache[0] || (_cache[0] = [
+function render$r(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$D, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "m242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28L75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256L9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48z"
@@ -484,17 +484,17 @@ function render$o(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$8 = markRaw({ name: 'fa-solid-times', render: render$o });
+const __unplugin_components_0$8 = markRaw({ name: 'fa-solid-times', render: render$r });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$z = {
+const _hoisted_1$C = {
   viewBox: "0 0 320 512",
   width: "0.76em",
   height: "1.2em"
 };
 
-function render$n(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$z, [...(_cache[0] || (_cache[0] = [
+function render$q(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$C, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M48 64C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm192 0c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48z"
@@ -502,17 +502,17 @@ function render$n(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_1$7 = markRaw({ name: 'fa6-solid-pause', render: render$n });
+const __unplugin_components_1$7 = markRaw({ name: 'fa6-solid-pause', render: render$q });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$y = {
+const _hoisted_1$B = {
   viewBox: "0 0 384 512",
   width: "0.9em",
   height: "1.2em"
 };
 
-function render$m(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$y, [...(_cache[0] || (_cache[0] = [
+function render$p(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$B, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80v352c0 17.4 9.4 33.4 24.5 41.9S58.2 482 73 473l288-176c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41z"
@@ -520,7 +520,7 @@ function render$m(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_1$6 = markRaw({ name: 'fa6-solid-play', render: render$m });
+const __unplugin_components_1$6 = markRaw({ name: 'fa6-solid-play', render: render$p });
 /* vite-plugin-components disabled */
 
 /* unplugin-vue-components disabled */
@@ -562,7 +562,7 @@ const _sfc_main$c = {
   
 };
 
-const _hoisted_1$x = {
+const _hoisted_1$A = {
   id: "audio-player",
   ref: "player"
 };
@@ -585,10 +585,10 @@ function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_fa6_solid_pause = __unplugin_components_1$7;
   const _component_fa_solid_times = __unplugin_components_0$8;
   const _component_ic_baseline_replay_30 = __unplugin_components_3$6;
-  const _component_ic_baseline_forward_30 = __unplugin_components_4$4;
+  const _component_ic_baseline_forward_30 = __unplugin_components_4$5;
   const _directive_tippy = resolveDirective("tippy");
 
-  return withDirectives((openBlock(), createElementBlock("div", _hoisted_1$x, [
+  return withDirectives((openBlock(), createElementBlock("div", _hoisted_1$A, [
     createBaseVNode("div", _hoisted_2$9, [
       createBaseVNode("div", _hoisted_3$6, [
         withDirectives(createBaseVNode("img", {
@@ -652,16 +652,16 @@ function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     [vShow, _ctx.store.audioPlayer.audio]
   ])
 }
-const __unplugin_components_4$3 = /*#__PURE__*/_export_sfc(_sfc_main$c, [['render',_sfc_render$c],['__scopeId',"data-v-96ba0de8"]]);
+const __unplugin_components_4$4 = /*#__PURE__*/_export_sfc(_sfc_main$c, [['render',_sfc_render$c],['__scopeId',"data-v-96ba0de8"]]);
 
-const _hoisted_1$w = {
+const _hoisted_1$z = {
   viewBox: "0 0 640 512",
   width: "1.5em",
   height: "1.2em"
 };
 
-function render$l(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$w, [...(_cache[0] || (_cache[0] = [
+function render$o(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$z, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l112.2-112.3c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0z"
@@ -669,17 +669,17 @@ function render$l(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_3$3 = markRaw({ name: 'fa6-solid-link', render: render$l });
+const __unplugin_components_3$3 = markRaw({ name: 'fa6-solid-link', render: render$o });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$v = {
+const _hoisted_1$y = {
   viewBox: "0 0 1024 1024",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$k(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$v, [...(_cache[0] || (_cache[0] = [
+function render$n(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$y, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M640 384v256H384V384zm64 0h192v256H704zm-64 512H384V704h256zm64 0V704h192v192zm-64-768v192H384V128zm64 0h192v192H704zM320 384v256H128V384zm0 512H128V704h192zm0-768v192H128V128z"
@@ -687,17 +687,17 @@ function render$k(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$7 = markRaw({ name: 'ep-grid', render: render$k });
+const __unplugin_components_0$7 = markRaw({ name: 'ep-grid', render: render$n });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$u = {
+const _hoisted_1$x = {
   viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$j(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$u, [...(_cache[0] || (_cache[0] = [
+function render$m(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$x, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M4 3h16a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 4v3h4V7zm6 0v3h4V7zm10 3V7h-4v3zM4 12v3h4v-3zm0 8h4v-3H4zm6-8v3h4v-3zm0 8h4v-3h-4zm10 0v-3h-4v3zm0-8h-4v3h4z"
@@ -705,7 +705,7 @@ function render$j(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$6 = markRaw({ name: 'mdi-table-large', render: render$j });
+const __unplugin_components_0$6 = markRaw({ name: 'mdi-table-large', render: render$m });
 /* vite-plugin-components disabled */
 
 /* unplugin-vue-components disabled */
@@ -741,7 +741,7 @@ const _sfc_main$b = {
   
 };
 
-const _hoisted_1$t = ["content"];
+const _hoisted_1$w = ["content"];
 
 function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_mdi_table_large = __unplugin_components_0$6;
@@ -764,11 +764,11 @@ function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
             class: "icon"
           }))
         : createCommentVNode("", true)
-  ], 10, _hoisted_1$t)), [
+  ], 10, _hoisted_1$w)), [
     [_directive_tippy, { allowHTML: true, }]
   ])
 }
-const __unplugin_components_4$2 = /*#__PURE__*/_export_sfc(_sfc_main$b, [['render',_sfc_render$b]]);
+const __unplugin_components_4$3 = /*#__PURE__*/_export_sfc(_sfc_main$b, [['render',_sfc_render$b]]);
 
 /* unplugin-vue-components disabled */
 
@@ -803,14 +803,14 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const __unplugin_components_1$5 = /*#__PURE__*/_export_sfc(_sfc_main$a, [['render',_sfc_render$a],['__scopeId',"data-v-88363c59"]]);
 
-const _hoisted_1$s = {
+const _hoisted_1$v = {
   viewBox: "0 0 384 512",
   width: "0.9em",
   height: "1.2em"
 };
 
-function render$i(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$s, [...(_cache[0] || (_cache[0] = [
+function render$l(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$v, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M223.5 32C100 32 0 132.3 0 256s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
@@ -818,17 +818,17 @@ function render$i(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_1$4 = markRaw({ name: 'fa6-solid-moon', render: render$i });
+const __unplugin_components_1$4 = markRaw({ name: 'fa6-solid-moon', render: render$l });
 /* vite-plugin-components disabled */
 
-const _hoisted_1$r = {
+const _hoisted_1$u = {
   viewBox: "0 0 512 512",
   width: "1.2em",
   height: "1.2em"
 };
 
-function render$h(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$r, [...(_cache[0] || (_cache[0] = [
+function render$k(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$u, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
       d: "M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391l-19.9 107.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391L13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256L2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121l19.9-107.9c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1l90.3-62.3c4.5-3.1 10.2-3.7 15.2-1.6M160 256a96 96 0 1 1 192 0a96 96 0 1 1-192 0m224 0a128 128 0 1 0-256 0a128 128 0 1 0 256 0"
@@ -836,7 +836,7 @@ function render$h(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_0$5 = markRaw({ name: 'fa6-solid-sun', render: render$h });
+const __unplugin_components_0$5 = markRaw({ name: 'fa6-solid-sun', render: render$k });
 /* vite-plugin-components disabled */
 
 /* unplugin-vue-components disabled */
@@ -885,13 +885,13 @@ const _sfc_main$9 = {
   }
 };
 
-const _hoisted_1$q = { class: "light-switch text-button" };
+const _hoisted_1$t = { class: "light-switch text-button" };
 
 function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_fa6_solid_sun = __unplugin_components_0$5;
   const _component_fa6_solid_moon = __unplugin_components_1$4;
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$q, [
+  return (openBlock(), createElementBlock("div", _hoisted_1$t, [
     createBaseVNode("div", {
       class: "icon",
       onClick: _cache[0] || (_cache[0] = $event => ($options.lightSwitchToggle(false)))
@@ -995,7 +995,7 @@ const _sfc_main$8 = {
   }
 };
 
-const _hoisted_1$p = { key: 0 };
+const _hoisted_1$s = { key: 0 };
 const _hoisted_2$8 = {
   key: 1,
   class: "mobile-menu-top-spacer"
@@ -1022,16 +1022,16 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_menuLooper = resolveComponent("menuLooper");
   const _component_gallery_light_switch = __unplugin_components_0$4;
   const _component_gallery_search_button = __unplugin_components_1$5;
-  const _component_gallery_view_mode_switcher = __unplugin_components_4$2;
+  const _component_gallery_view_mode_switcher = __unplugin_components_4$3;
   const _component_fa6_solid_link = __unplugin_components_3$3;
-  const _component_gallery_audio_player_ui_desktop = __unplugin_components_4$3;
+  const _component_gallery_audio_player_ui_desktop = __unplugin_components_4$4;
   const _directive_tippy = resolveDirective("tippy");
 
   return (openBlock(), createElementBlock("div", {
     class: normalizeClass(["menu-items", { 'has-sub-menu': $props.childRoutes, mobileMenu: $props.mobileMenuOpen }])
   }, [
     (_ctx.menuOpen)
-      ? (openBlock(), createElementBlock("div", _hoisted_1$p, [
+      ? (openBlock(), createElementBlock("div", _hoisted_1$s, [
           ($props.mobileMenuOpen)
             ? (openBlock(), createElementBlock("div", {
                 key: 0,
@@ -1182,7 +1182,7 @@ const _sfc_main$7 = {
   
 };
 
-const _hoisted_1$o = {
+const _hoisted_1$r = {
   class: "outer-wrap",
   ref: "modalPapa"
 };
@@ -1197,7 +1197,7 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ref: "modalGrandpa",
     onClick: _cache[2] || (_cache[2] = (...args) => ($options.closeOverlay && $options.closeOverlay(...args)))
   }, [
-    createBaseVNode("div", _hoisted_1$o, [
+    createBaseVNode("div", _hoisted_1$r, [
       createBaseVNode("div", _hoisted_2$7, [
         renderSlot(_ctx.$slots, "default"),
         withDirectives((openBlock(), createElementBlock("div", {
@@ -1220,8 +1220,59 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const __unplugin_components_1$3 = /*#__PURE__*/_export_sfc(_sfc_main$7, [['render',_sfc_render$7]]);
 
+const _hoisted_1$q = {
+  viewBox: "0 0 512 512",
+  width: "1.2em",
+  height: "1.2em"
+};
+
+function render$j(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$q, [...(_cache[0] || (_cache[0] = [
+    createBaseVNode("path", {
+      fill: "currentColor",
+      d: "M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352zm368 56a24 24 0 1 1 0 48a24 24 0 1 1 0-48"
+    }, null, -1)
+  ]))]))
+}
+
+const __unplugin_components_4$2 = markRaw({ name: 'fa6-solid-download', render: render$j });
+/* vite-plugin-components disabled */
+
+const _hoisted_1$p = {
+  viewBox: "0 0 24 24",
+  width: "1.2em",
+  height: "1.2em"
+};
+
+function render$i(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$p, [...(_cache[0] || (_cache[0] = [
+    createStaticVNode("<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"32\" d=\"M12 21c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.6s\" values=\"32;0\"></animate></path><path stroke-dasharray=\"2 4\" stroke-dashoffset=\"6\" d=\"M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9\" opacity=\"0\"><set fill=\"freeze\" attributeName=\"opacity\" begin=\"0.45s\" to=\"1\"></set><animateTransform fill=\"freeze\" attributeName=\"transform\" begin=\"0.45s\" dur=\"0.6s\" type=\"rotate\" values=\"-180 12 12;0 12 12\"></animateTransform><animate attributeName=\"stroke-dashoffset\" begin=\"0.85s\" dur=\"0.6s\" repeatCount=\"indefinite\" to=\"0\"></animate></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M12 8v7.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.85s\" dur=\"0.2s\" to=\"0\"></animate></path><path stroke-dasharray=\"8\" stroke-dashoffset=\"8\" d=\"M12 15.5l3.5 -3.5M12 15.5l-3.5 -3.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"1.05s\" dur=\"0.2s\" to=\"0\"></animate></path></g>", 1)
+  ]))]))
+}
+
+const __unplugin_components_4$1 = markRaw({ name: 'line-md-downloading-loop', render: render$i });
+/* vite-plugin-components disabled */
+
+const _hoisted_1$o = {
+  viewBox: "0 0 20 20",
+  width: "1.2em",
+  height: "1.2em"
+};
+
+function render$h(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$o, [...(_cache[0] || (_cache[0] = [
+    createBaseVNode("path", {
+      fill: "currentColor",
+      d: "M13 13a1 1 0 0 1 1 1v3.75a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V14a1 1 0 0 1 1-1m2.5-8A2.5 2.5 0 0 1 18 7.5v7a2.5 2.5 0 0 1-2.5 2.5H15v-3a2 2 0 1 0-4 0v3H4.5A2.5 2.5 0 0 1 2 14.5V8h5.086a1.5 1.5 0 0 0 1.06-.44L10.707 5zm-4 6a.5.5 0 0 0 0 1H13v-1zm1.5 0h1.5a.5.5 0 0 0 0-1H13zm-1.5-2a.5.5 0 0 0 0 1H13V9zM13 9h1.5a.5.5 0 0 0 0-1H13zm-1.5-2a.5.5 0 0 0 0 1H13V7zM6.982 3c.464 0 .91.185 1.238.513l1.28 1.28l-2.06 2.06A.5.5 0 0 1 7.085 7H2V5.5A2.5 2.5 0 0 1 4.5 3z"
+    }, null, -1)
+  ]))]))
+}
+
+const __unplugin_components_3$2 = markRaw({ name: 'fluent-folder-zip20-filled', render: render$h });
+/* vite-plugin-components disabled */
+
 const _hoisted_1$n = {
-  viewBox: "0 0 16 16",
+  viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
@@ -1230,16 +1281,16 @@ function render$g(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$n, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656c0-.781.281-1.625.75-2.188c-.203-.515-.172-1.609.063-2.062c.625-.078 1.468.25 1.968.703c.594-.187 1.219-.281 1.985-.281c.765 0 1.39.094 1.953.265c.484-.437 1.344-.765 1.969-.687c.218.422.25 1.515.046 2.047c.5.593.766 1.39.766 2.203c0 1.922-1.453 3.375-3.547 3.64c.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03C16 3.61 12.406 0 7.984 0C3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156c-1.031 0-1.64-.562-2.078-1.609c-.172-.422-.36-.672-.719-.719c-.187-.015-.25-.093-.25-.187c0-.188.313-.328.625-.328c.453 0 .844.281 1.25.86c.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"
+      d: "M6 20q-.825 0-1.412-.587T4 18v-2q0-.425.288-.712T5 15t.713.288T6 16v2h12v-2q0-.425.288-.712T19 15t.713.288T20 16v2q0 .825-.587 1.413T18 20zm5-12.15L9.125 9.725q-.3.3-.712.288T7.7 9.7q-.275-.3-.288-.7t.288-.7l3.6-3.6q.15-.15.325-.212T12 4.425t.375.063t.325.212l3.6 3.6q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L13 7.85V15q0 .425-.288.713T12 16t-.712-.288T11 15z"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_5$3 = markRaw({ name: 'octicon-mark-github16', render: render$g });
+const __unplugin_components_11 = markRaw({ name: 'material-symbols-upload-rounded', render: render$g });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$m = {
-  viewBox: "0 0 512 512",
+  viewBox: "0 0 24 24",
   width: "1.2em",
   height: "1.2em"
 };
@@ -1248,12 +1299,12 @@ function render$f(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$m, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352zm368 56a24 24 0 1 1 0 48a24 24 0 1 1 0-48"
+      d: "M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_4$1 = markRaw({ name: 'fa6-solid-download', render: render$f });
+const __unplugin_components_10 = markRaw({ name: 'mdi-plus-box', render: render$f });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$l = {
@@ -1264,11 +1315,14 @@ const _hoisted_1$l = {
 
 function render$e(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$l, [...(_cache[0] || (_cache[0] = [
-    createStaticVNode("<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"32\" d=\"M12 21c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.6s\" values=\"32;0\"></animate></path><path stroke-dasharray=\"2 4\" stroke-dashoffset=\"6\" d=\"M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9\" opacity=\"0\"><set fill=\"freeze\" attributeName=\"opacity\" begin=\"0.45s\" to=\"1\"></set><animateTransform fill=\"freeze\" attributeName=\"transform\" begin=\"0.45s\" dur=\"0.6s\" type=\"rotate\" values=\"-180 12 12;0 12 12\"></animateTransform><animate attributeName=\"stroke-dashoffset\" begin=\"0.85s\" dur=\"0.6s\" repeatCount=\"indefinite\" to=\"0\"></animate></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M12 8v7.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.85s\" dur=\"0.2s\" to=\"0\"></animate></path><path stroke-dasharray=\"8\" stroke-dashoffset=\"8\" d=\"M12 15.5l3.5 -3.5M12 15.5l-3.5 -3.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"1.05s\" dur=\"0.2s\" to=\"0\"></animate></path></g>", 1)
+    createBaseVNode("path", {
+      fill: "currentColor",
+      d: "M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"
+    }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_3$2 = markRaw({ name: 'line-md-downloading-loop', render: render$e });
+const __unplugin_components_9 = markRaw({ name: 'mdi-minus-box', render: render$e });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$k = {
@@ -1281,12 +1335,12 @@ function render$d(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$k, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M6 20q-.825 0-1.412-.587T4 18v-2q0-.425.288-.712T5 15t.713.288T6 16v2h12v-2q0-.425.288-.712T19 15t.713.288T20 16v2q0 .825-.587 1.413T18 20zm5-12.15L9.125 9.725q-.3.3-.712.288T7.7 9.7q-.275-.3-.288-.7t.288-.7l3.6-3.6q.15-.15.325-.212T12 4.425t.375.063t.325.212l3.6 3.6q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L13 7.85V15q0 .425-.288.713T12 16t-.712-.288T11 15z"
+      d: "M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93c0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_8 = markRaw({ name: 'material-symbols-upload-rounded', render: render$d });
+const __unplugin_components_8 = markRaw({ name: 'mdi-earth', render: render$d });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$j = {
@@ -1299,12 +1353,12 @@ function render$c(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$j, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"
+      d: "M12 17a2 2 0 0 0 2-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_7 = markRaw({ name: 'mdi-plus-box', render: render$c });
+const __unplugin_components_7 = markRaw({ name: 'mdi-lock', render: render$c });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$i = {
@@ -1317,12 +1371,12 @@ function render$b(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$i, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M17 13H7v-2h10m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"
+      d: "M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_6 = markRaw({ name: 'mdi-minus-box', render: render$b });
+const __unplugin_components_6 = markRaw({ name: 'mdi-information-outline', render: render$b });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$h = {
@@ -1335,12 +1389,12 @@ function render$a(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$h, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"
+      d: "M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_5$2 = markRaw({ name: 'mdi-information-outline', render: render$a });
+const __unplugin_components_5$2 = markRaw({ name: 'mdi-web', render: render$a });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$g = {
@@ -1351,24 +1405,6 @@ const _hoisted_1$g = {
 
 function render$9(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$g, [...(_cache[0] || (_cache[0] = [
-    createBaseVNode("path", {
-      fill: "currentColor",
-      d: "M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"
-    }, null, -1)
-  ]))]))
-}
-
-const __unplugin_components_4 = markRaw({ name: 'mdi-web', render: render$9 });
-/* vite-plugin-components disabled */
-
-const _hoisted_1$f = {
-  viewBox: "0 0 24 24",
-  width: "1.2em",
-  height: "1.2em"
-};
-
-function render$8(_ctx, _cache) {
-  return (openBlock(), createElementBlock("svg", _hoisted_1$f, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("g", {
       fill: "none",
       stroke: "currentColor",
@@ -1387,7 +1423,25 @@ function render$8(_ctx, _cache) {
   ]))]))
 }
 
-const __unplugin_components_3$1 = markRaw({ name: 'akar-icons-circle-plus', render: render$8 });
+const __unplugin_components_4 = markRaw({ name: 'akar-icons-circle-plus', render: render$9 });
+/* vite-plugin-components disabled */
+
+const _hoisted_1$f = {
+  viewBox: "0 0 256 256",
+  width: "1.2em",
+  height: "1.2em"
+};
+
+function render$8(_ctx, _cache) {
+  return (openBlock(), createElementBlock("svg", _hoisted_1$f, [...(_cache[0] || (_cache[0] = [
+    createBaseVNode("path", {
+      fill: "currentColor",
+      d: "M240 88.23a54.43 54.43 0 0 1-16 37L189.25 160a54.27 54.27 0 0 1-38.63 16h-.05A54.63 54.63 0 0 1 96 119.84a8 8 0 0 1 16 .45A38.62 38.62 0 0 0 150.58 160a38.4 38.4 0 0 0 27.31-11.31l34.75-34.75a38.63 38.63 0 0 0-54.63-54.63l-11 11A8 8 0 0 1 135.7 59l11-11a54.65 54.65 0 0 1 77.3 0a54.86 54.86 0 0 1 16 40.23m-131 97.43l-11 11A38.4 38.4 0 0 1 70.6 208a38.63 38.63 0 0 1-27.29-65.94L78 107.31a38.63 38.63 0 0 1 66 28.4a8 8 0 0 0 16 .45A54.86 54.86 0 0 0 144 96a54.65 54.65 0 0 0-77.27 0L32 130.75A54.62 54.62 0 0 0 70.56 224a54.28 54.28 0 0 0 38.64-16l11-11a8 8 0 0 0-11.2-11.34"
+    }, null, -1)
+  ]))]))
+}
+
+const __unplugin_components_3$1 = markRaw({ name: 'ph-link', render: render$8 });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$e = {
@@ -1418,12 +1472,12 @@ function render$6(_ctx, _cache) {
   return (openBlock(), createElementBlock("svg", _hoisted_1$d, [...(_cache[0] || (_cache[0] = [
     createBaseVNode("path", {
       fill: "currentColor",
-      d: "M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+      d: "M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"
     }, null, -1)
   ]))]))
 }
 
-const __unplugin_components_1$2 = markRaw({ name: 'mdi-github', render: render$6 });
+const __unplugin_components_1$2 = markRaw({ name: 'mdi-user', render: render$6 });
 /* vite-plugin-components disabled */
 
 const _hoisted_1$c = {
@@ -29001,7 +29055,7 @@ const _sfc_main$6 = {
       completedPagesUrl: null,
       includeReadme: true,
       authenticating: false,
-      aleTopics: ['ale-generated', 'audible-library'],
+      aleTopics: ['audible-library-extractor-gallery'],
       stages: ['Uploading files', 'Organizing files', 'Saving changes', 'Done'],
       progress: {
         stage: '',
@@ -29024,7 +29078,7 @@ const _sfc_main$6 = {
       return _.find( this.repos, { name: this.selectedRepo } ) || null;
     },
     canUpload() {
-      return this.selectedRepo && this.selectedRepo !== '__new__';
+      return this.selectedRepo && this.selectedRepo !== '__new__' && this.selectedRepoInfo.isAleRepo;
     },
     filteredRepos() {
       const source = this.showAllRepos
@@ -29160,8 +29214,12 @@ const _sfc_main$6 = {
         // Topics are included in the repo list response — no extra API calls needed.
         // Pages info is NOT fetched here — only fetched lazily when a repo is selected.
         const reposBase = data.map( ( r ) => {
+          
+          console.log( 'r.topics', r.topics );
+          
           const topics = r.topics || [];
           const isAleRepo = !!_.intersection( topics, this.aleTopics ).length;
+          
           return {
             name: r.name,
             pushedAt: r.pushed_at,
@@ -29176,6 +29234,7 @@ const _sfc_main$6 = {
             pagesStatus: null,
             commitCount: null, // fetched lazily on selection
           };
+          
         });
 
         this.repos = reposBase;
@@ -29891,73 +29950,82 @@ const _hoisted_50 = { class: "repo-info-row" };
 const _hoisted_51 = { class: "info-value" };
 const _hoisted_52 = { class: "repo-info-row" };
 const _hoisted_53 = { class: "info-value" };
-const _hoisted_54 = { class: "repo-info-row" };
-const _hoisted_55 = { class: "info-value topics-value" };
+const _hoisted_54 = { class: "icon" };
+const _hoisted_55 = { class: "text" };
 const _hoisted_56 = { class: "repo-info-row" };
-const _hoisted_57 = ["href"];
-const _hoisted_58 = {
+const _hoisted_57 = { class: "info-value topics-value" };
+const _hoisted_58 = { class: "repo-info-row" };
+const _hoisted_59 = ["href"];
+const _hoisted_60 = {
   key: 1,
   class: "status-msg"
 };
-const _hoisted_59 = {
+const _hoisted_61 = {
   key: 2,
   class: "progress-wrap"
 };
-const _hoisted_60 = { class: "progress-bar" };
-const _hoisted_61 = { class: "progress-text" };
-const _hoisted_62 = { key: 0 };
-const _hoisted_63 = {
+const _hoisted_62 = { class: "progress-bar" };
+const _hoisted_63 = { class: "progress-text" };
+const _hoisted_64 = { key: 0 };
+const _hoisted_65 = {
   key: 3,
   class: "stage-indicator"
 };
-const _hoisted_64 = {
+const _hoisted_66 = {
   key: 4,
   class: "opt-row"
 };
-const _hoisted_65 = { class: "opt-label" };
-const _hoisted_66 = {
+const _hoisted_67 = { class: "opt-label" };
+const _hoisted_68 = {
   key: 5,
   class: "commit-msg-wrap"
 };
-const _hoisted_67 = ["placeholder"];
-const _hoisted_68 = { class: "actions" };
+const _hoisted_69 = ["placeholder"];
+const _hoisted_70 = { class: "actions" };
+const _hoisted_71 = { class: "btn-wrapper" };
+const _hoisted_72 = { style: {"display":"flex","flex-direction":"row","justify-content":"center","align-items":"center","margin-top":"5px"} };
+const _hoisted_73 = ["disabled"];
 
 function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_eos_icons58loading = __unplugin_components_0$2;
-  const _component_mdi_github = __unplugin_components_1$2;
+  const _component_mdi_user = __unplugin_components_1$2;
   const _component_f758checkmark_seal = __unplugin_components_2$1;
-  const _component_akar_icons58circle_plus = __unplugin_components_3$1;
-  const _component_mdi58web = __unplugin_components_4;
-  const _component_mdi58information_outline = __unplugin_components_5$2;
-  const _component_mdi_minus_box = __unplugin_components_6;
-  const _component_mdi58plus_box = __unplugin_components_7;
-  const _component_material_symbols_upload_rounded = __unplugin_components_8;
-  const _component_Button = resolveComponent("Button");
+  const _component_ph_link = __unplugin_components_3$1;
+  const _component_akar_icons58circle_plus = __unplugin_components_4;
+  const _component_mdi58web = __unplugin_components_5$2;
+  const _component_mdi58information_outline = __unplugin_components_6;
+  const _component_mdi58lock = __unplugin_components_7;
+  const _component_mdi58earth = __unplugin_components_8;
+  const _component_mdi_minus_box = __unplugin_components_9;
+  const _component_mdi58plus_box = __unplugin_components_10;
+  const _component_tippy = resolveComponent("tippy");
+  const _component_material_symbols_upload_rounded = __unplugin_components_11;
   const _directive_click_outside = resolveDirective("click-outside");
   const _directive_tippy = resolveDirective("tippy");
 
   return (openBlock(), createElementBlock("div", _hoisted_1$b, [
     (!$options.isAuthenticated)
       ? (openBlock(), createElementBlock("div", _hoisted_2$6, [
-          _cache[22] || (_cache[22] = createBaseVNode("div", { class: "auth-icon" }, [
+          _cache[24] || (_cache[24] = createBaseVNode("div", { class: "auth-icon" }, [
             createBaseVNode("svg", {
               viewBox: "0 0 24 24",
               fill: "currentColor",
-              width: "32",
-              height: "32"
+              width: "1em",
+              height: "1em"
             }, [
               createBaseVNode("path", { d: "M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" })
             ])
           ], -1)),
-          _cache[23] || (_cache[23] = createBaseVNode("p", { class: "auth-hint" }, "Connect your GitHub account to sync your library.", -1)),
+          _cache[25] || (_cache[25] = createBaseVNode("p", { class: "auth-hint" }, "Connect your GitHub account to upload your library with ease.", -1)),
           createBaseVNode("button", {
             class: "btn-primary",
+            style: {"gap":"11px"},
             onClick: _cache[0] || (_cache[0] = (...args) => ($options.auth && $options.auth(...args)))
           }, [
             ($data.authenticating)
               ? (openBlock(), createBlock(_component_eos_icons58loading, { key: 0 }))
-              : (openBlock(), createBlock(_component_mdi_github, { key: 1 })),
-            _cache[21] || (_cache[21] = createTextVNode(" Sign in with GitHub ", -1))
+              : (openBlock(), createBlock(_component_mdi_user, { key: 1 })),
+            _cache[23] || (_cache[23] = createTextVNode(" Sign in with GitHub ", -1))
           ])
         ]))
       : (openBlock(), createElementBlock("div", _hoisted_3$4, [
@@ -29984,17 +30052,20 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
           ($data.uploadComplete)
             ? (openBlock(), createElementBlock("div", _hoisted_11$2, [
                 createBaseVNode("div", _hoisted_12$2, [
-                  _cache[25] || (_cache[25] = createStaticVNode("<div class=\"complete-check-icon\" data-v-5eda4178><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-5eda4178><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-5eda4178></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-5eda4178></path></svg></div><div class=\"complete-title\" data-v-5eda4178>Upload complete</div>", 2)),
+                  _cache[27] || (_cache[27] = createStaticVNode("<div class=\"complete-check-icon\" data-v-c8c08904><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-c8c08904><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-c8c08904></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-c8c08904></path></svg></div><div class=\"complete-title\" data-v-c8c08904>Upload complete</div>", 2)),
                   ($data.completedPagesUrl)
                     ? (openBlock(), createElementBlock("a", {
                         key: 0,
                         href: $data.completedPagesUrl,
                         target: "_blank",
                         class: "complete-url"
-                      }, toDisplayString($data.completedPagesUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')), 9, _hoisted_13$2))
+                      }, [
+                        createVNode(_component_ph_link),
+                        createTextVNode(" " + toDisplayString($data.completedPagesUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')), 1)
+                      ], 8, _hoisted_13$2))
                     : createCommentVNode("", true),
                   ($data.completedPagesUrl)
-                    ? withDirectives((openBlock(), createElementBlock("div", _hoisted_14$2, [...(_cache[24] || (_cache[24] = [
+                    ? withDirectives((openBlock(), createElementBlock("div", _hoisted_14$2, [...(_cache[26] || (_cache[26] = [
                         createBaseVNode("span", { class: "building-dot" }, null, -1),
                         createTextVNode(" Publishing site… ", -1)
                       ]))], 512)), [
@@ -30015,7 +30086,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
             : ($data.uploadFailed)
               ? (openBlock(), createElementBlock("div", _hoisted_16$2, [
                   createBaseVNode("div", _hoisted_17$1, [
-                    _cache[26] || (_cache[26] = createStaticVNode("<div class=\"failed-icon\" data-v-5eda4178><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-5eda4178><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-5eda4178></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-5eda4178></path></svg></div><div class=\"failed-title\" data-v-5eda4178>Upload failed</div>", 2)),
+                    _cache[28] || (_cache[28] = createStaticVNode("<div class=\"failed-icon\" data-v-c8c08904><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-c8c08904><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-c8c08904></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-c8c08904></path></svg></div><div class=\"failed-title\" data-v-c8c08904>Upload failed</div>", 2)),
                     createBaseVNode("div", _hoisted_18$1, toDisplayString($data.failedMessage), 1),
                     createBaseVNode("div", _hoisted_19$1, [
                       createBaseVNode("button", {
@@ -30032,7 +30103,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
               : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
                   (!$data.isSyncing)
                     ? (openBlock(), createElementBlock("div", _hoisted_20$1, [
-                        _cache[39] || (_cache[39] = createBaseVNode("label", { class: "repo-label" }, [
+                        _cache[40] || (_cache[40] = createBaseVNode("label", { class: "repo-label" }, [
                           createTextVNode(" Project "),
                           createBaseVNode("span", { class: "term-hint" }, "git: repository")
                         ], -1)),
@@ -30047,7 +30118,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                   ($data.selectedRepo === '__new__')
                                     ? (openBlock(), createElementBlock("span", _hoisted_23$1, [
                                         createVNode(_component_akar_icons58circle_plus),
-                                        _cache[27] || (_cache[27] = createTextVNode(" Create new project… ", -1))
+                                        _cache[29] || (_cache[29] = createTextVNode(" Create new project… ", -1))
                                       ]))
                                     : ($data.selectedRepo)
                                       ? (openBlock(), createElementBlock("span", _hoisted_24$1, toDisplayString($data.selectedRepo), 1))
@@ -30085,7 +30156,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                           onClick: _cache[10] || (_cache[10] = $event => ($options.selectRepo('__new__')))
                                         }, [
                                           createVNode(_component_akar_icons58circle_plus),
-                                          _cache[28] || (_cache[28] = createBaseVNode("div", { class: "text" }, "Create new project…", -1))
+                                          _cache[30] || (_cache[30] = createBaseVNode("div", { class: "text" }, "Create new project…", -1))
                                         ], 2),
                                         (openBlock(true), createElementBlock(Fragment, null, renderList($options.filteredRepos, (r) => {
                                           return (openBlock(), createElementBlock("div", {
@@ -30126,7 +30197,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                     ]),
                                     ($data.newRepoName.trim())
                                       ? (openBlock(), createElementBlock("div", _hoisted_39, [
-                                          _cache[29] || (_cache[29] = createBaseVNode("span", { class: "pages-preview-label" }, "Website URL will be", -1)),
+                                          _cache[31] || (_cache[31] = createBaseVNode("span", { class: "pages-preview-label" }, "Website URL will be", -1)),
                                           createBaseVNode("span", _hoisted_40, toDisplayString($data.profile.login) + ".github.io/" + toDisplayString($data.newRepoName), 1)
                                         ]))
                                       : createCommentVNode("", true)
@@ -30144,11 +30215,14 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                   }, [
                                     createVNode(_component_mdi58web, { class: "pages-url-icon" }),
                                     createBaseVNode("span", null, toDisplayString($options.selectedRepoInfo.pagesUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')), 1),
-                                    createBaseVNode("span", {
-                                      class: normalizeClass(['pages-status', $options.selectedRepoInfo.pagesStatus])
-                                    }, toDisplayString($options.selectedRepoInfo.pagesStatus || '—'), 3)
+                                    ($options.selectedRepoInfo.pagesStatus)
+                                      ? (openBlock(), createElementBlock("span", {
+                                          key: 0,
+                                          class: normalizeClass(['pages-status', $options.selectedRepoInfo.pagesStatus])
+                                        }, toDisplayString($options.selectedRepoInfo.pagesStatus), 3))
+                                      : createCommentVNode("", true)
                                   ], 8, _hoisted_42))
-                                : (openBlock(), createElementBlock("div", _hoisted_43, [...(_cache[30] || (_cache[30] = [
+                                : (openBlock(), createElementBlock("div", _hoisted_43, [...(_cache[32] || (_cache[32] = [
                                     createBaseVNode("span", { class: "info-label" }, "Website", -1),
                                     createBaseVNode("span", {
                                       class: "info-value",
@@ -30156,7 +30230,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                     }, "not set up", -1)
                                   ]))])),
                               createBaseVNode("div", _hoisted_44, [
-                                _cache[31] || (_cache[31] = createBaseVNode("span", { class: "info-label" }, "Last upload", -1)),
+                                _cache[33] || (_cache[33] = createBaseVNode("span", { class: "info-label" }, "Last upload", -1)),
                                 createBaseVNode("span", _hoisted_45, [
                                   createTextVNode(toDisplayString($options.formatDate($options.selectedRepoInfo.pushedAt)) + " ", 1),
                                   withDirectives(createVNode(_component_mdi58information_outline, { class: "info-tip-icon" }, null, 512), [
@@ -30165,7 +30239,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                 ])
                               ]),
                               createBaseVNode("div", _hoisted_46, [
-                                _cache[32] || (_cache[32] = createBaseVNode("span", { class: "info-label" }, "Created", -1)),
+                                _cache[34] || (_cache[34] = createBaseVNode("span", { class: "info-label" }, "Created", -1)),
                                 createBaseVNode("span", _hoisted_47, [
                                   createTextVNode(toDisplayString($options.formatDate($options.selectedRepoInfo.createdAt)) + " ", 1),
                                   withDirectives(createVNode(_component_mdi58information_outline, { class: "info-tip-icon" }, null, 512), [
@@ -30174,77 +30248,83 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                                 ])
                               ]),
                               createBaseVNode("div", _hoisted_48, [
-                                _cache[33] || (_cache[33] = createBaseVNode("span", { class: "info-label" }, "Uploads", -1)),
+                                _cache[35] || (_cache[35] = createBaseVNode("span", { class: "info-label" }, "Uploads", -1)),
                                 createBaseVNode("span", _hoisted_49, toDisplayString($options.selectedRepoInfo.commitCount !== null ? $options.selectedRepoInfo.commitCount : '…'), 1)
                               ]),
                               createBaseVNode("div", _hoisted_50, [
-                                _cache[34] || (_cache[34] = createBaseVNode("span", { class: "info-label" }, "Size", -1)),
+                                _cache[36] || (_cache[36] = createBaseVNode("span", { class: "info-label" }, "Size", -1)),
                                 createBaseVNode("span", _hoisted_51, toDisplayString($options.formatSize($options.selectedRepoInfo.size)), 1)
                               ]),
                               createBaseVNode("div", _hoisted_52, [
-                                _cache[35] || (_cache[35] = createBaseVNode("span", { class: "info-label" }, "Visibility", -1)),
-                                createBaseVNode("span", _hoisted_53, toDisplayString($options.selectedRepoInfo.private ? '🔒 private' : '🌐 public'), 1)
-                              ]),
-                              createBaseVNode("div", _hoisted_54, [
-                                _cache[37] || (_cache[37] = createBaseVNode("span", { class: "info-label" }, "Topics", -1)),
-                                createBaseVNode("span", _hoisted_55, [
-                                  ($options.selectedRepoInfo.isAleRepo)
-                                    ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-                                        (openBlock(true), createElementBlock(Fragment, null, renderList($options.selectedRepoInfo.topics, (topicName) => {
-                                          return (openBlock(), createElementBlock("span", {
-                                            class: "ale-topic",
-                                            key: topicName
-                                          }, toDisplayString(topicName), 1))
-                                        }), 128)),
-                                        createVNode(_component_mdi_minus_box, {
-                                          class: "topic-action remove",
-                                          onClick: _cache[14] || (_cache[14] = $event => ($options.tagRepoWithAle($options.selectedRepoInfo.name, { action: 'remove' }))),
-                                          title: "Remove ALE tags"
-                                        })
-                                      ], 64))
-                                    : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
-                                        _cache[36] || (_cache[36] = createBaseVNode("span", { class: "info-value-dim" }, "none", -1)),
-                                        createVNode(_component_mdi58plus_box, {
-                                          class: "topic-action add",
-                                          onClick: _cache[15] || (_cache[15] = $event => ($options.tagRepoWithAle($options.selectedRepoInfo.name, { action: 'add' }))),
-                                          title: "Tag as ALE project"
-                                        })
-                                      ], 64))
+                                _cache[37] || (_cache[37] = createBaseVNode("span", { class: "info-label" }, "Visibility", -1)),
+                                createBaseVNode("span", _hoisted_53, [
+                                  createBaseVNode("span", _hoisted_54, [
+                                    ($options.selectedRepoInfo.private)
+                                      ? (openBlock(), createBlock(_component_mdi58lock, { key: 0 }))
+                                      : (openBlock(), createBlock(_component_mdi58earth, { key: 1 }))
+                                  ]),
+                                  createBaseVNode("span", _hoisted_55, toDisplayString($options.selectedRepoInfo.private ? 'private' : 'public'), 1)
                                 ])
                               ]),
                               createBaseVNode("div", _hoisted_56, [
-                                _cache[38] || (_cache[38] = createBaseVNode("span", { class: "info-label" }, "Location", -1)),
+                                _cache[38] || (_cache[38] = createBaseVNode("span", { class: "info-label" }, "Topics", -1)),
+                                createBaseVNode("span", _hoisted_57, [
+                                  (openBlock(true), createElementBlock(Fragment, null, renderList($options.selectedRepoInfo.topics, (topicName) => {
+                                    return (openBlock(), createElementBlock("span", {
+                                      class: normalizeClass(["repo-topic", { 'ale-topic': $data.aleTopics.includes(topicName) }]),
+                                      key: topicName
+                                    }, toDisplayString(topicName), 3))
+                                  }), 128)),
+                                  ($options.selectedRepoInfo.isAleRepo)
+                                    ? withDirectives((openBlock(), createBlock(_component_mdi_minus_box, {
+                                        key: 0,
+                                        class: "topic-action remove",
+                                        onClick: _cache[14] || (_cache[14] = $event => ($options.tagRepoWithAle($options.selectedRepoInfo.name, { action: 'remove' })))
+                                      }, null, 512)), [
+                                        [_directive_tippy, { content: `Remove ALE tags: ${$data.aleTopics.join(', ')}.`, placement: 'top', flipBehavior: ['left', 'right', 'bottom'] }]
+                                      ])
+                                    : withDirectives((openBlock(), createBlock(_component_mdi58plus_box, {
+                                        key: 1,
+                                        class: "topic-action add",
+                                        onClick: _cache[15] || (_cache[15] = $event => ($options.tagRepoWithAle($options.selectedRepoInfo.name, { action: 'add' })))
+                                      }, null, 512)), [
+                                        [_directive_tippy, { content: `Tag as ALE project so that you can upload into it and we can filter based on that in the project dropdown. Newly created projects are tagged automatically.`, placement: 'top', flipBehavior: ['left', 'right', 'bottom'] }]
+                                      ])
+                                ])
+                              ]),
+                              createBaseVNode("div", _hoisted_58, [
+                                _cache[39] || (_cache[39] = createBaseVNode("span", { class: "info-label" }, "Location", -1)),
                                 createBaseVNode("a", {
                                   href: `https://github.com/${$data.profile.login}/${$options.selectedRepoInfo.name}`,
                                   target: "_blank",
                                   class: "info-link"
-                                }, " github.com/" + toDisplayString($data.profile.login) + "/" + toDisplayString($options.selectedRepoInfo.name), 9, _hoisted_57)
+                                }, " github.com/" + toDisplayString($data.profile.login) + "/" + toDisplayString($options.selectedRepoInfo.name), 9, _hoisted_59)
                               ])
                             ]))
                           : createCommentVNode("", true)
                       ]))
                     : createCommentVNode("", true),
                   ($data.statusMessage)
-                    ? (openBlock(), createElementBlock("div", _hoisted_58, toDisplayString($data.statusMessage), 1))
+                    ? (openBlock(), createElementBlock("div", _hoisted_60, toDisplayString($data.statusMessage), 1))
                     : createCommentVNode("", true),
                   ($data.progress.total > 0)
-                    ? (openBlock(), createElementBlock("div", _hoisted_59, [
-                        createBaseVNode("div", _hoisted_60, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_61, [
+                        createBaseVNode("div", _hoisted_62, [
                           createBaseVNode("div", {
                             class: "progress-fill",
                             style: normalizeStyle({ width: $data.progress.percent + '%' })
                           }, null, 4)
                         ]),
-                        createBaseVNode("div", _hoisted_61, [
+                        createBaseVNode("div", _hoisted_63, [
                           createTextVNode(toDisplayString($data.progress.percent) + "% ", 1),
                           ($data.progress.total > 0)
-                            ? (openBlock(), createElementBlock("span", _hoisted_62, "(" + toDisplayString($data.progress.done) + "/" + toDisplayString($data.progress.total) + " files)", 1))
+                            ? (openBlock(), createElementBlock("span", _hoisted_64, "(" + toDisplayString($data.progress.done) + "/" + toDisplayString($data.progress.total) + " files)", 1))
                             : createCommentVNode("", true)
                         ])
                       ]))
                     : createCommentVNode("", true),
                   ($data.isSyncing || $data.progress.stage)
-                    ? (openBlock(), createElementBlock("div", _hoisted_63, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_65, [
                         (openBlock(true), createElementBlock(Fragment, null, renderList($data.stages, (s) => {
                           return (openBlock(), createElementBlock("div", {
                             key: s,
@@ -30254,26 +30334,26 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                       ]))
                     : createCommentVNode("", true),
                   (!$data.isSyncing && $options.canUpload)
-                    ? (openBlock(), createElementBlock("div", _hoisted_64, [
-                        createBaseVNode("label", _hoisted_65, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_66, [
+                        createBaseVNode("label", _hoisted_67, [
                           withDirectives(createBaseVNode("input", {
                             type: "checkbox",
                             "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($data.includeReadme) = $event))
                           }, null, 512), [
                             [vModelCheckbox, $data.includeReadme]
                           ]),
-                          _cache[40] || (_cache[40] = createTextVNode(" Include a link back to ALE on the project page ", -1))
+                          _cache[41] || (_cache[41] = createTextVNode(" Include a link back to ALE on the project page ", -1))
                         ])
                       ]))
                     : createCommentVNode("", true),
                   (!$data.isSyncing && $options.canUpload)
-                    ? (openBlock(), createElementBlock("div", _hoisted_66, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_68, [
                         createBaseVNode("button", {
                           class: "btn-ghost commit-toggle",
                           onClick: _cache[17] || (_cache[17] = $event => ($data.showCommitMessage = !$data.showCommitMessage))
                         }, [
                           createTextVNode(toDisplayString($data.showCommitMessage ? '▾' : '▸') + " Add upload note ", 1),
-                          _cache[41] || (_cache[41] = createBaseVNode("span", { class: "term-hint" }, "git: commit message", -1))
+                          _cache[42] || (_cache[42] = createBaseVNode("span", { class: "term-hint" }, "git: commit message", -1))
                         ]),
                         ($data.showCommitMessage)
                           ? withDirectives((openBlock(), createElementBlock("textarea", {
@@ -30282,13 +30362,13 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                               "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($data.commitMessage) = $event)),
                               placeholder: $data.defaultCommitMessage,
                               rows: "2"
-                            }, null, 8, _hoisted_67)), [
+                            }, null, 8, _hoisted_69)), [
                               [vModelText, $data.commitMessage]
                             ])
                           : createCommentVNode("", true)
                       ]))
                     : createCommentVNode("", true),
-                  createBaseVNode("div", _hoisted_68, [
+                  createBaseVNode("div", _hoisted_70, [
                     ($data.isSyncing)
                       ? (openBlock(), createElementBlock("button", {
                           key: 0,
@@ -30300,24 +30380,49 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
                             class: "btn-ghost",
                             onClick: _cache[20] || (_cache[20] = (...args) => ($options.signOut && $options.signOut(...args)))
                           }, "Sign out"),
-                          createVNode(_component_Button, {
-                            class: "btn-primary",
-                            disabled: !$options.canUpload,
-                            onClick: $options.uploadLibrary
-                          }, {
-                            default: withCtx(() => [
-                              _cache[42] || (_cache[42] = createBaseVNode("span", null, "Upload Library", -1)),
+                          createBaseVNode("div", _hoisted_71, [
+                            ($options.selectedRepoInfo && !$options.selectedRepoInfo.isAleRepo)
+                              ? (openBlock(), createBlock(_component_tippy, {
+                                  key: 0,
+                                  to: "parent",
+                                  "content-tag": "div",
+                                  interactive: "",
+                                  "hide-on-click": false,
+                                  "content-class": "content-wrapper",
+                                  placement: "top",
+                                  "flip-behavior": "['left', 'right', 'bottom']"
+                                }, {
+                                  default: withCtx(() => [
+                                    _cache[44] || (_cache[44] = createTextVNode(" You can't upload unless the selected project is tagged as ALE project: ", -1)),
+                                    createBaseVNode("div", _hoisted_72, [
+                                      createBaseVNode("button", {
+                                        class: "btn-gray small",
+                                        onClick: _cache[21] || (_cache[21] = $event => ($options.tagRepoWithAle($options.selectedRepoInfo.name, { action: 'add' })))
+                                      }, [
+                                        createVNode(_component_mdi58plus_box, { class: "topic-action add" }),
+                                        _cache[43] || (_cache[43] = createTextVNode(" Mark as ALE Project", -1))
+                                      ])
+                                    ])
+                                  ]),
+                                  _: 1
+                                }))
+                              : createCommentVNode("", true),
+                            createBaseVNode("button", {
+                              class: "btn-primary",
+                              disabled: !$options.canUpload,
+                              onClick: _cache[22] || (_cache[22] = (...args) => ($options.uploadLibrary && $options.uploadLibrary(...args)))
+                            }, [
+                              _cache[45] || (_cache[45] = createBaseVNode("span", null, "Upload to Github", -1)),
                               createVNode(_component_material_symbols_upload_rounded)
-                            ]),
-                            _: 1
-                          }, 8, ["disabled", "onClick"])
+                            ], 8, _hoisted_73)
+                          ])
                         ], 64))
                   ])
                 ], 64))
         ]))
   ]))
 }
-const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$6, [['render',_sfc_render$6],['__scopeId',"data-v-5eda4178"]]);
+const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$6, [['render',_sfc_render$6],['__scopeId',"data-v-c8c08904"]]);
 
 const _hoisted_1$a = {
   viewBox: "0 0 512 512",
@@ -31941,29 +32046,19 @@ const _hoisted_11$1 = {
   key: 0,
   class: "non-github-api-wrapper"
 };
-const _hoisted_12$1 = ["disabled"];
-const _hoisted_13$1 = { key: 0 };
-const _hoisted_14$1 = { class: "github-instructions" };
-const _hoisted_15$1 = {
-  class: "github-btn",
-  target: "_blank",
-  rel: "noopener noreferrer",
-  href: "https://joonaspaakko.gitbook.io/audible-library-extractor/sharing/uploading-to-github"
-};
-const _hoisted_16$1 = {
-  class: "github-btn",
-  target: "_blank",
-  rel: "noopener noreferrer",
-  href: "https://joonaspaakko.gitbook.io/audible-library-extractor/sharing/uploading-to-github/updating-gallery-in-github"
-};
+const _hoisted_12$1 = { class: "zip-export-wrapper" };
+const _hoisted_13$1 = { class: "zip-inner-wrapper" };
+const _hoisted_14$1 = { class: "icon" };
+const _hoisted_15$1 = ["disabled"];
+const _hoisted_16$1 = { key: 0 };
 
 function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ep_grid = __unplugin_components_0$7;
   const _component_fa_solid_check = __unplugin_components_5$1;
   const _component_github = __unplugin_components_2;
-  const _component_line_md_downloading_loop = __unplugin_components_3$2;
-  const _component_fa6_solid_download = __unplugin_components_4$1;
-  const _component_octicon_mark_github_16 = __unplugin_components_5$3;
+  const _component_fluent_folder_zip_20_filled = __unplugin_components_3$2;
+  const _component_line_md_downloading_loop = __unplugin_components_4$1;
+  const _component_fa6_solid_download = __unplugin_components_4$2;
   const _component_gallery_modal = __unplugin_components_1$3;
   const _directive_tippy = resolveDirective("tippy");
 
@@ -31986,7 +32081,7 @@ function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
             createBaseVNode("div", { class: "description" }, " Create a shareable website version of your library. Publish it online instantly, or download the files for manual hosting. ", -1)
           ]))], 512)
         ]),
-        _cache[10] || (_cache[10] = createBaseVNode("h3", null, "Include:", -1)),
+        _cache[9] || (_cache[9] = createBaseVNode("h3", null, "Include:", -1)),
         createBaseVNode("div", _hoisted_3$3, [
           (openBlock(true), createElementBlock(Fragment, null, renderList($options.chunkSource, (group, groupIndex) => {
             return (openBlock(), createElementBlock("div", {
@@ -32043,46 +32138,60 @@ function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
             }, null, 8, ["active", "getFiles"]),
             (!_ctx.githubApiProcessActive)
               ? (openBlock(), createElementBlock("div", _hoisted_11$1, [
-                  _cache[9] || (_cache[9] = createBaseVNode("div", { class: "divider" }, [
+                  _cache[8] || (_cache[8] = createBaseVNode("div", { class: "divider" }, [
                     createBaseVNode("span", null, "OR")
                   ], -1)),
-                  createBaseVNode("button", {
-                    class: normalizeClass(["save-btn save-gallery", { saving: _ctx.bundling }]),
-                    onClick: _cache[2] || (_cache[2] = $event => ($options.saveButtonClicked({ zip: true }))),
-                    disabled: !_ctx.$store.state.devMode && (_ctx.bundling || !_ctx.saveBtnEnabled)
-                  }, [
-                    createBaseVNode("span", null, [
-                      (_ctx.bundling)
-                        ? (openBlock(), createElementBlock("strong", _hoisted_13$1, "Packaging:"))
-                        : createCommentVNode("", true),
-                      _cache[6] || (_cache[6] = createTextVNode(" ALE-gallery.zip", -1))
-                    ]),
-                    (_ctx.bundling)
-                      ? (openBlock(), createBlock(_component_line_md_downloading_loop, { key: 0 }))
-                      : (openBlock(), createBlock(_component_fa6_solid_download, { key: 1 })),
-                    (_ctx.bundling && _ctx.progressWidth)
-                      ? (openBlock(), createElementBlock("div", {
-                          key: 2,
-                          class: "progress",
-                          style: normalizeStyle({ width: _ctx.progressWidth })
-                        }, null, 4))
-                      : createCommentVNode("", true),
-                    (_ctx.bundling)
-                      ? (openBlock(), createElementBlock("button", {
-                          key: 3,
-                          class: "cancel-packaging",
-                          onClick: _cache[1] || (_cache[1] = (...args) => ($options.cancelZipping && $options.cancelZipping(...args)))
-                        }, "cancel"))
-                      : createCommentVNode("", true)
-                  ], 10, _hoisted_12$1),
-                  createBaseVNode("div", _hoisted_14$1, [
-                    createBaseVNode("a", _hoisted_15$1, [
-                      _cache[7] || (_cache[7] = createBaseVNode("span", null, "Upload instructions", -1)),
-                      createVNode(_component_octicon_mark_github_16)
-                    ]),
-                    createBaseVNode("a", _hoisted_16$1, [
-                      _cache[8] || (_cache[8] = createBaseVNode("span", null, "Update instructions", -1)),
-                      createVNode(_component_octicon_mark_github_16)
+                  createBaseVNode("div", _hoisted_12$1, [
+                    createBaseVNode("div", _hoisted_13$1, [
+                      createBaseVNode("div", _hoisted_14$1, [
+                        createVNode(_component_fluent_folder_zip_20_filled)
+                      ]),
+                      _cache[7] || (_cache[7] = createBaseVNode("div", { class: "github-instructions" }, [
+                        createTextVNode(" Export your gallery as a ZIP file that you can host the files yourself. If choose to upload your files to Github manually: "),
+                        createBaseVNode("a", {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                          href: "https://joonaspaakko.gitbook.io/audible-library-extractor/sharing/uploading-to-github"
+                        }, "upload instructions"),
+                        createTextVNode(", "),
+                        createBaseVNode("a", {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                          href: "https://joonaspaakko.gitbook.io/audible-library-extractor/sharing/uploading-to-github/updating-gallery-in-github"
+                        }, "update instructions"),
+                        createTextVNode(". ")
+                      ], -1)),
+                      createBaseVNode("button", {
+                        class: normalizeClass(["export-zip-btn", { saving: _ctx.bundling }]),
+                        onClick: _cache[2] || (_cache[2] = $event => ($options.saveButtonClicked({ zip: true }))),
+                        disabled: !_ctx.$store.state.devMode && (_ctx.bundling || !_ctx.saveBtnEnabled)
+                      }, [
+                        (_ctx.bundling)
+                          ? (openBlock(), createBlock(_component_line_md_downloading_loop, { key: 0 }))
+                          : (openBlock(), createBlock(_component_fa6_solid_download, { key: 1 })),
+                        createBaseVNode("span", null, [
+                          (_ctx.bundling)
+                            ? (openBlock(), createElementBlock("strong", _hoisted_16$1, "Packaging:"))
+                            : createCommentVNode("", true),
+                          _cache[6] || (_cache[6] = createTextVNode(" ALE-gallery.zip", -1))
+                        ]),
+                        (_ctx.bundling)
+                          ? (openBlock(), createElementBlock("button", {
+                              key: 2,
+                              class: "cancel-packaging",
+                              onClick: _cache[1] || (_cache[1] = (...args) => ($options.cancelZipping && $options.cancelZipping(...args)))
+                            }, "cancel"))
+                          : createCommentVNode("", true),
+                        createBaseVNode("div", null, [
+                          (_ctx.bundling && _ctx.progressWidth)
+                            ? (openBlock(), createElementBlock("div", {
+                                key: 0,
+                                class: "progress",
+                                style: normalizeStyle({ width: _ctx.progressWidth })
+                              }, null, 4))
+                            : createCommentVNode("", true)
+                        ])
+                      ], 10, _hoisted_15$1)
                     ])
                   ])
                 ]))
@@ -32094,7 +32203,7 @@ function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }))
 }
-const saveGallery = /*#__PURE__*/_export_sfc(_sfc_main$5, [['render',_sfc_render$5],['__scopeId',"data-v-f961d6da"]]);
+const saveGallery = /*#__PURE__*/_export_sfc(_sfc_main$5, [['render',_sfc_render$5],['__scopeId',"data-v-f16f8665"]]);
 
 const _hoisted_1$8 = {
   viewBox: "0 0 576 512",
@@ -33074,7 +33183,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ic_baseline_circle = __unplugin_components_1$1;
   const _component_fa_solid_check = __unplugin_components_5$1;
   const _component_fa6_solid_circle_notch = __unplugin_components_3;
-  const _component_fa6_solid_download = __unplugin_components_4$1;
+  const _component_fa6_solid_download = __unplugin_components_4$2;
   const _component_fa6_solid_share_from_square = __unplugin_components_5;
   const _component_gallery_modal = __unplugin_components_1$3;
 
@@ -37329,13 +37438,13 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const aleLibraryView = /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]]);
 
-const aleGallery     = () => __vitePreload(() => import('./gallery-root.BiVIIhK2.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
-const aleCollections = () => __vitePreload(() => import('./gallery-collections.3yiCSNrD.js'),true?__vite__mapDeps([18,1,2,3,10,5,6,11,4,13,14,15,16,19]):void 0,import.meta.url);
-const aleCategories  = () => __vitePreload(() => import('./gallery-categories.DorpTPT1.js'),true?__vite__mapDeps([20,2,3,4,8,9,10,5,6,11,13,14,15,16,21]):void 0,import.meta.url);
-const aleSeries      = () => __vitePreload(() => import('./gallery-series.BxwmOt2H.js'),true?__vite__mapDeps([22,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,23]):void 0,import.meta.url);
-const aleAuthors     = () => __vitePreload(() => import('./gallery-authors.DvfVetDL.js'),true?__vite__mapDeps([24,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,25]):void 0,import.meta.url);
-const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.1QDB9VVu.js'),true?__vite__mapDeps([26,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,27]):void 0,import.meta.url);
-const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.CYwYT2bE.js'),true?__vite__mapDeps([28,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,29]):void 0,import.meta.url);
+const aleGallery     = () => __vitePreload(() => import('./gallery-root.C0djy6Jp.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
+const aleCollections = () => __vitePreload(() => import('./gallery-collections.DIp7V6FV.js'),true?__vite__mapDeps([18,1,2,3,10,5,6,11,4,13,14,15,16,19]):void 0,import.meta.url);
+const aleCategories  = () => __vitePreload(() => import('./gallery-categories.BkfE2vCV.js'),true?__vite__mapDeps([20,2,3,4,8,9,10,5,6,11,13,14,15,16,21]):void 0,import.meta.url);
+const aleSeries      = () => __vitePreload(() => import('./gallery-series.CrewGlpC.js'),true?__vite__mapDeps([22,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,23]):void 0,import.meta.url);
+const aleAuthors     = () => __vitePreload(() => import('./gallery-authors.DEtB-v_2.js'),true?__vite__mapDeps([24,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,25]):void 0,import.meta.url);
+const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.C9lhWnvm.js'),true?__vite__mapDeps([26,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,27]):void 0,import.meta.url);
+const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.C0ETjOwP.js'),true?__vite__mapDeps([28,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,29]):void 0,import.meta.url);
 
 const allRoutes = {
   library: { 
@@ -38457,4 +38566,4 @@ function startVue( libraryData ) {
   
 }
 
-export { VueSlider as V, __unplugin_components_0$b as _, makeGoodReadsUrl as a, __unplugin_components_1$6 as b, slugify as c, __unplugin_components_0$8 as d, __unplugin_components_1$3 as e, __unplugin_components_5$1 as f, __unplugin_components_4$2 as g, makeFullUrl as m, prepareKeys as p, stringifyArray as s };
+export { VueSlider as V, __unplugin_components_0$b as _, makeGoodReadsUrl as a, __unplugin_components_1$6 as b, slugify as c, __unplugin_components_0$8 as d, __unplugin_components_1$3 as e, __unplugin_components_5$1 as f, __unplugin_components_4$3 as g, makeFullUrl as m, prepareKeys as p, stringifyArray as s };

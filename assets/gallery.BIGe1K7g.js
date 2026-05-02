@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.BikHdZhx.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.D7-AExPd.js","./jszip.HPtxegej.js","./gallery-search.Du4_7WVC.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.BjxZ-yuP.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./tippy.D2CvuMJV.js","./tippy.CccQYZjX.css","./gallery-root.DbZgvYv3.css","./gallery-collections.C9zcorlg.js","./gallery-collections.CfEzgue_.css","./gallery-categories.BjuhKeRb.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.DrK6DXho.js","./gallery-series.BUI5za12.css","./gallery-authors.DEIMc5mu.js","./gallery-authors.B_KccURD.css","./gallery-narrators.0zCqJAeM.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.zvhxZkSm.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.D25BwVhz.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.D7-AExPd.js","./jszip.HPtxegej.js","./gallery-search.BInUL175.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.BjxZ-yuP.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./tippy.D2CvuMJV.js","./tippy.CccQYZjX.css","./gallery-root.DbZgvYv3.css","./gallery-collections.fLd43D5l.js","./gallery-collections.CfEzgue_.css","./gallery-categories.BmoQQj0t.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.DvHkdCfW.js","./gallery-series.BUI5za12.css","./gallery-authors.CoEj-vN9.js","./gallery-authors.B_KccURD.css","./gallery-narrators.BAgQ00pB.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.CYgHP-BE.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
 import { m as makeCoverUrl } from './gallery-makeCoverUrl.BnX14Pi7.js';
 import { m as markRaw, o as openBlock, c as createElementBlock, a as createBaseVNode, _ as _export_sfc, w as withDirectives, v as vShow, n as normalizeStyle, b as createVNode, t as toDisplayString, d as createCommentVNode, r as resolveDirective, e as resolveComponent, f as withModifiers, g as normalizeClass, h as createBlock, F as Fragment, i as renderList, j as withCtx, k as normalizeProps, l as resolveDynamicComponent, p as renderSlot, q as createStaticVNode, s as createTextVNode, u as withKeys, x as vModelText, y as vModelCheckbox, z as vModelRadio, A as _$1, B as unref, C as shallowReactive, D as shallowRef, E as defineComponent, G as inject, H as h, I as reactive, J as computed, K as watch, L as ref, M as nextTick, N as provide, O as createApp } from './lodash.Cy6RZ5mX.js';
 import { c as commonjsGlobal, g as getDefaultExportFromCjs } from './jquery.3Hs3vqLI.js';
@@ -29578,10 +29578,10 @@ const _sfc_main$6 = {
       // yields to other workers. Pre-hashing first keeps workers pure network I/O.
       this.progress.stage = 'Uploading files';
       this.statusMessage = 'Preparing files...';
- 
+
       let blobCache = {};
       try { blobCache = JSON.parse( localStorage.getItem( cacheKey ) || '{}' ); } catch {}
- 
+
       for ( let i = 0; i < files.length; i++ ) {
         if ( signal.aborted ) return [];
         const c = files[i].content;
@@ -29595,18 +29595,37 @@ const _sfc_main$6 = {
         }
         files[i].contentHash = await this._gitBlobShaBytes( bytes );
       }
- 
-      // UPLOAD CONCURRENTLY
-      // 15 concurrent workers stays under GitHub's secondary rate limit.
-      // Workers pre-check the shared rate-limit promise before grabbing the next file
-      // so they don't immediately 403 the moment a wait resolves.
+
+      // UPLOAD WITH TOKEN-BUCKET RATE LIMITING
+      // Random jitter caused burst → 60s freeze cycles: all workers would hammer the API
+      // until GitHub's secondary rate limit triggered, then everything stalled for a minute.
+      // A token bucket at RATE_PER_SECOND prevents that entirely — uploads stay continuous
+      // at a steady pace rather than doing visible stop-start cycles.
+      // JS is single-threaded so the shared token state has no race conditions.
       this.statusMessage = 'Uploading files...';
- 
+
+      const RATE_PER_SECOND = 15; // sustained req/s — stays under GitHub's secondary limit
+      const CONCURRENCY = 15;     // enough workers to always keep the rate limiter saturated
+
+      let tokens = RATE_PER_SECOND;
+      let lastRefill = Date.now();
+
+      const acquireToken = async () => {
+        while ( true ) {
+          if ( signal.aborted ) return;
+          const now = Date.now();
+          tokens = Math.min( RATE_PER_SECOND, tokens + ( now - lastRefill ) / 1000 * RATE_PER_SECOND );
+          lastRefill = now;
+          if ( tokens >= 1 ) { tokens -= 1; return; }
+          await this.sleep( Math.ceil( ( 1 - tokens ) / RATE_PER_SECOND * 1000 ) );
+        }
+      };
+
       const blobShas = new Array( files.length );
       let completed = 0;
-      const CONCURRENCY = 15;
       let nextIndex = 0;
- 
+      let pendingCacheWrites = 0;
+
       const toBase64 = ( content ) => {
         const isBuffer = content instanceof ArrayBuffer;
         const isUint8 = content instanceof Uint8Array;
@@ -29618,15 +29637,19 @@ const _sfc_main$6 = {
         }
         return btoa( unescape( encodeURIComponent( content ) ) );
       };
- 
+
       const uploadBlob = async ( file ) => {
         const fileContent = file.content ?? '';
         const MAX_RETRIES = 5;
-        let delay = 1000;
- 
-        for ( let attempt = 0; attempt < MAX_RETRIES; attempt++ ) {
+        let delay = 2000;
+        let attempt = 0;
+
+        while ( attempt < MAX_RETRIES ) {
           if ( signal.aborted ) return null;
- 
+
+          await acquireToken();
+          if ( signal.aborted ) return null;
+
           const response = await fetch(
             `https://api.github.com/repos/${owner}/${repo}/git/blobs`,
             {
@@ -29644,20 +29667,26 @@ const _sfc_main$6 = {
               signal,
             }
           );
- 
+
           if ( response.ok ) {
             const data = await response.json();
             return data.sha;
           }
- 
+
+          // Rate limit / abuse detection → wait, but DO NOT count as a retry.
+          // Also drain the token bucket so all other workers stall immediately
+          // rather than burning more quota while the promise is being set up.
           if ( response.status === 403 || response.status === 429 ) {
             const retryAfter = response.headers.get( 'retry-after' );
             const waitMs = retryAfter ? parseInt( retryAfter ) * 1000 : delay;
+
+            tokens = 0; // drain so all workers stall at acquireToken
+
             if ( !this._rateLimitPromise ) {
               this._rateLimitPromise = new Promise( resolve => {
                 this._rateLimitResolve = resolve;
                 let remaining = Math.round( waitMs / 1000 );
-                this.statusMessage = `Too many requests — retrying in ${remaining}s...`;
+                this.statusMessage = `API rate limit exceeded — Continuing in ${remaining}s...`;
                 const tick = setInterval( () => {
                   if ( signal.aborted ) { clearInterval( tick ); resolve(); return; }
                   remaining--;
@@ -29667,32 +29696,40 @@ const _sfc_main$6 = {
                     this._rateLimitResolve = null;
                     resolve();
                   } else {
-                    this.statusMessage = `Too many requests — retrying in ${remaining}s...`;
+                    this.statusMessage = `API rate limit exceeded — Continuing in ${remaining}s...`;
                   }
                 }, 1000 );
               });
             }
+
             await this._rateLimitPromise;
-            delay *= 2;
+            continue; // 🔑 do NOT increment attempt
+          }
+
+          // Transient server errors → retry with backoff
+          if ( response.status >= 500 ) {
+            await this.sleep( delay );
+            delay = Math.min( delay * 2, 30000 );
+            attempt++;
             continue;
           }
- 
+
           throw new Error( `Upload failed: ${response.status} ${response.statusText}` );
         }
- 
+
         throw new Error( `Upload failed after ${MAX_RETRIES} retries` );
       };
- 
+
       const runWorker = async () => {
         while ( true ) {
           if ( signal.aborted ) return;
           if ( this._rateLimitPromise ) await this._rateLimitPromise;
- 
+
           const i = nextIndex++;
           if ( i >= files.length ) return;
- 
+
           const file = files[i];
- 
+
           if ( blobCache[file.contentHash] ) {
             blobShas[i] = blobCache[file.contentHash];
           } else {
@@ -29700,23 +29737,24 @@ const _sfc_main$6 = {
             if ( !sha ) return;
             blobShas[i] = sha;
             blobCache[file.contentHash] = sha;
-            localStorage.setItem( cacheKey, JSON.stringify( blobCache ) );
+            // Batch cache writes — setItem on every single file is expensive at scale
+            if ( ++pendingCacheWrites % 50 === 0 ) {
+              localStorage.setItem( cacheKey, JSON.stringify( blobCache ) );
+            }
           }
- 
+
           completed++;
           this.progress.done = completed;
           this.progress.percent = Math.round( ( completed / files.length ) * 70 );
           this.statusMessage = `Uploading ${completed}/${files.length}`;
         }
       };
- 
-      // Stagger worker startup to avoid an initial burst hitting the rate limit.
-      // Each worker waits i*50ms before starting — spreads first requests over 700ms.
-      await Promise.all(
-        Array.from( { length: CONCURRENCY }, ( _, i ) =>
-          new Promise( r => setTimeout( r, i * 50 ) ).then( runWorker )
-        )
-      );
+
+      await Promise.all( Array.from( { length: CONCURRENCY }, runWorker ) );
+
+      // Final flush — ensures the last batch of cache entries is always persisted
+      localStorage.setItem( cacheKey, JSON.stringify( blobCache ) );
+
       return blobShas;
     },
 
@@ -30065,7 +30103,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
           ($data.uploadComplete)
             ? (openBlock(), createElementBlock("div", _hoisted_11$2, [
                 createBaseVNode("div", _hoisted_12$2, [
-                  _cache[27] || (_cache[27] = createStaticVNode("<div class=\"complete-check-icon\" data-v-b57417a6><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-b57417a6><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-b57417a6></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-b57417a6></path></svg></div><div class=\"complete-title\" data-v-b57417a6>Upload complete</div>", 2)),
+                  _cache[27] || (_cache[27] = createStaticVNode("<div class=\"complete-check-icon\" data-v-e75e49d2><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-e75e49d2><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-e75e49d2></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-e75e49d2></path></svg></div><div class=\"complete-title\" data-v-e75e49d2>Upload complete</div>", 2)),
                   ($data.completedPagesUrl)
                     ? (openBlock(), createElementBlock("a", {
                         key: 0,
@@ -30099,7 +30137,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
             : ($data.uploadFailed)
               ? (openBlock(), createElementBlock("div", _hoisted_16$2, [
                   createBaseVNode("div", _hoisted_17$1, [
-                    _cache[28] || (_cache[28] = createStaticVNode("<div class=\"failed-icon\" data-v-b57417a6><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-b57417a6><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-b57417a6></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-b57417a6></path></svg></div><div class=\"failed-title\" data-v-b57417a6>Upload failed</div>", 2)),
+                    _cache[28] || (_cache[28] = createStaticVNode("<div class=\"failed-icon\" data-v-e75e49d2><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-e75e49d2><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-e75e49d2></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-e75e49d2></path></svg></div><div class=\"failed-title\" data-v-e75e49d2>Upload failed</div>", 2)),
                     createBaseVNode("div", _hoisted_18$1, toDisplayString($data.failedMessage), 1),
                     createBaseVNode("div", _hoisted_19$1, [
                       createBaseVNode("button", {
@@ -30435,7 +30473,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
         ]))
   ]))
 }
-const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$6, [['render',_sfc_render$6],['__scopeId',"data-v-b57417a6"]]);
+const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$6, [['render',_sfc_render$6],['__scopeId',"data-v-e75e49d2"]]);
 
 const _hoisted_1$a = {
   viewBox: "0 0 512 512",
@@ -37451,13 +37489,13 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const aleLibraryView = /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]]);
 
-const aleGallery     = () => __vitePreload(() => import('./gallery-root.BikHdZhx.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
-const aleCollections = () => __vitePreload(() => import('./gallery-collections.C9zcorlg.js'),true?__vite__mapDeps([18,1,2,3,10,5,6,11,4,13,14,15,16,19]):void 0,import.meta.url);
-const aleCategories  = () => __vitePreload(() => import('./gallery-categories.BjuhKeRb.js'),true?__vite__mapDeps([20,2,3,4,8,9,10,5,6,11,13,14,15,16,21]):void 0,import.meta.url);
-const aleSeries      = () => __vitePreload(() => import('./gallery-series.DrK6DXho.js'),true?__vite__mapDeps([22,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,23]):void 0,import.meta.url);
-const aleAuthors     = () => __vitePreload(() => import('./gallery-authors.DEIMc5mu.js'),true?__vite__mapDeps([24,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,25]):void 0,import.meta.url);
-const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.0zCqJAeM.js'),true?__vite__mapDeps([26,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,27]):void 0,import.meta.url);
-const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.zvhxZkSm.js'),true?__vite__mapDeps([28,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,29]):void 0,import.meta.url);
+const aleGallery     = () => __vitePreload(() => import('./gallery-root.D25BwVhz.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
+const aleCollections = () => __vitePreload(() => import('./gallery-collections.fLd43D5l.js'),true?__vite__mapDeps([18,1,2,3,10,5,6,11,4,13,14,15,16,19]):void 0,import.meta.url);
+const aleCategories  = () => __vitePreload(() => import('./gallery-categories.BmoQQj0t.js'),true?__vite__mapDeps([20,2,3,4,8,9,10,5,6,11,13,14,15,16,21]):void 0,import.meta.url);
+const aleSeries      = () => __vitePreload(() => import('./gallery-series.DvHkdCfW.js'),true?__vite__mapDeps([22,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,23]):void 0,import.meta.url);
+const aleAuthors     = () => __vitePreload(() => import('./gallery-authors.CoEj-vN9.js'),true?__vite__mapDeps([24,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,25]):void 0,import.meta.url);
+const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.BAgQ00pB.js'),true?__vite__mapDeps([26,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,27]):void 0,import.meta.url);
+const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.CYgHP-BE.js'),true?__vite__mapDeps([28,1,2,3,7,8,9,10,5,6,11,12,4,13,14,15,16,29]):void 0,import.meta.url);
 
 const allRoutes = {
   library: { 

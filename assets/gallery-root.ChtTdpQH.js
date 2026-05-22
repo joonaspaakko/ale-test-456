@@ -1,16 +1,16 @@
-import { _ as __unplugin_components_1$9 } from './gallery-lazy.D2gGK08t.js';
+import { _ as __unplugin_components_1$9 } from './gallery-lazy.BVsJ3eWf.js';
 import { m as makeCoverUrl } from './gallery-makeCoverUrl.BnX14Pi7.js';
-import { _ as _export_sfc$1, e as resolveComponent, r as resolveDirective, o as openBlock, c as createElementBlock, b as createVNode, j as withCtx, h as createBlock, l as resolveDynamicComponent, a as createBaseVNode, t as toDisplayString, d as createCommentVNode, s as createTextVNode, w as withDirectives, p as renderSlot, E as defineComponent, U as onMounted, V as onBeforeUnmount, K as watch, L as ref, J as computed, ba as onUpdated, G as inject, N as provide, F as Fragment, i as renderList, m as markRaw, n as normalizeStyle, g as normalizeClass, k as normalizeProps, v as vShow, f as withModifiers, P as Transition } from './lodash.ebDXNOg6.js';
-import { m as makeFullUrl, _ as __unplugin_components_0$e, a as makeGoodReadsUrl, s as stringifyArray, p as prepareKeys, b as __unplugin_components_1$b, c as slugify, d as __unplugin_components_0$f, e as __unplugin_components_1$c } from './gallery.C7Zf7Jfn.js';
-import { e as timeStringToSeconds, a as axios, s as secondsToTimeString } from './content-script-helpers.DZxzr4Lc.js';
-import { _ as __unplugin_components_1$a, a as __unplugin_components_0$g } from './gallery-search.BpNEpe8L.js';
+import { _ as _export_sfc$1, e as resolveComponent, r as resolveDirective, o as openBlock, c as createElementBlock, b as createVNode, j as withCtx, h as createBlock, l as resolveDynamicComponent, a as createBaseVNode, t as toDisplayString, d as createCommentVNode, s as createTextVNode, w as withDirectives, p as renderSlot, E as defineComponent, S as onMounted, U as onBeforeUnmount, K as watch, L as ref, J as computed, ba as onUpdated, G as inject, N as provide, F as Fragment, i as renderList, m as markRaw, n as normalizeStyle, g as normalizeClass, k as normalizeProps, v as vShow, f as withModifiers, T as Transition } from './lodash.Cy6RZ5mX.js';
+import { m as makeFullUrl, _ as __unplugin_components_0$e, a as makeGoodReadsUrl, s as stringifyArray, p as prepareKeys, b as __unplugin_components_1$b, c as slugify, d as __unplugin_components_0$f, e as __unplugin_components_1$c } from './gallery.CZltR5UV.js';
+import { e as timeStringToSeconds, a as axios, s as secondsToTimeString } from './content-script-helpers.D7-AExPd.js';
+import { _ as __unplugin_components_1$a, a as __unplugin_components_0$g } from './gallery-search.fIS71AJB.js';
 import { g as getDefaultExportFromCjs } from './jquery.3Hs3vqLI.js';
-import { f as findSubPageSource } from './gallery-findSubPageSource.BkqAmRY2.js';
-import './index.BDoy_Chl.js';
+import { f as findSubPageSource } from './gallery-findSubPageSource.CB10VwdW.js';
+import './index.9Z32wZYy.js';
 import './howler.B9zQKWVB.js';
-import './tippy.s5_9dW0W.js';
-import './jszip.BBGmtqMN.js';
-import './gallery-page-title.D_lq7AiU.js';
+import './tippy.D2CvuMJV.js';
+import './jszip.HPtxegej.js';
+import './gallery-page-title.BjxZ-yuP.js';
 
 /* unplugin-vue-components disabled */
 
@@ -5547,31 +5547,25 @@ const progressbarWidth = {
   }
 };
 
-// gallery-loadBookData.js
-// Replaces the old script-tag based loadJSON with an IndexedDB-backed chunk loader.
-//
-// Chunks are fetched once per cacheID and stored in IndexedDB.
-// When the cacheID changes (new library export), all stored chunks are cleared
-// and re-fetched — a deliberate compromise for simplicity and reliability.
-//
-// Usage: add to mixins: [ ..., loadBookData ]
-// Remove from the host component:
-//   - scrpt data prop + its this.scrpt.remove() cleanup in beforeUnmount
-//   - bookSummaryJSON / peopleAlsoBoughtJSON window globals
+// Chunks are fetched once per cacheID and stored in IndexedDB. When the cacheID changes
+// (new library export), all stored chunks are cleared and re-fetched, which is a
+// deliberate compromise for simplicity and reliability.
 
 
-// Database config — grouped and frozen so they're non-reactive and clearly namespaced.
-const db = Object.freeze({
+// MODULE-LEVEL CONSTANTS:
+
+// Database config:
+const db = {
   name: 'ale_split_book_data',
   version: 1,
-  stores: Object.freeze({
+  stores: {
     meta: 'meta',
     chunks: 'chunks',
-  }),
-});
+  },
+};
 
-// Module-level — intentionally outside the export so it survives component
-// destroy/create cycles. No point reopening the connection on every book click.
+// Intentionally outside the export so it survives component destroy/create cycles. 
+// No point resetting on every close.
 let dbInstance = null;
 
 const loadSplitBookData = {
@@ -5587,11 +5581,10 @@ const loadSplitBookData = {
     async loadJSON(afterError) {
 
       // In the extension environment book data isn't split into chunks.
-      if (!this.store.standalone) return;
+      if ( !this.store.standalone ) return;
 
       const { asin, chunkId } = this.book;
       const cacheID = this.store.library.extras.cacheID;
-      console.log( 'this.store.library.extras.cacheID', this.store.library.extras.cacheID );
 
       try {
 
@@ -5603,7 +5596,7 @@ const loadSplitBookData = {
         // Try the local cache first...
         let chunkRecord = await this.getChunkFromDatabase(database, chunkId);
 
-        if (!chunkRecord) {
+        if ( !chunkRecord ) {
           // Not cached — fetch from server and persist for subsequent opens.
           const books = await this.fetchBookDataChunk(chunkId, cacheID);
           await this.writeChunkToDatabase(database, chunkId, books);
@@ -5612,17 +5605,16 @@ const loadSplitBookData = {
 
         // Update book details...
         const bookData = this.findBookDataInChunk(chunkRecord.books, asin);
-        if (bookData) {
-          this.bookSummaryJSON = bookData.summary;
-          this.peopleAlsoBoughtJSON = bookData.peopleAlsoBought;
+        if ( bookData ) {
+          this.splitData.bookSummary = bookData.summary;
+          this.splitData.peopleAlsoBought = bookData.peopleAlsoBought;
         }
 
-      } catch (err) {
+      } catch ( err ) {
 
         console.warn(`[loadBookData] Failed to load data for asin ${asin}:`, err);
-
-        // Retry once — arrow function preserves `this` correctly.
-        if (!afterError) setTimeout(() => this.loadJSON('afterError'), 1000);
+        
+        if ( !afterError ) setTimeout(() => this.loadJSON('afterError'), 1000);
 
       }
 
@@ -5638,7 +5630,7 @@ const loadSplitBookData = {
      * @returns {Promise<IDBDatabase>}
      */
     async getBookDatabase() {
-      if (!dbInstance) dbInstance = await this.openBookDatabase();
+      if ( !dbInstance ) dbInstance = await this.openBookDatabase();
       return dbInstance;
     },
 
@@ -5654,17 +5646,17 @@ const loadSplitBookData = {
         request.onupgradeneeded = (event) => {
           const idb = event.target.result;
           // 'meta' holds housekeeping data — currently just the last known cacheID.
-          if (!idb.objectStoreNames.contains(db.stores.meta)) {
+          if ( !idb.objectStoreNames.contains(db.stores.meta) ) {
             idb.createObjectStore(db.stores.meta, { keyPath: 'key' });
           }
           // 'chunks' stores fetched chunk arrays, keyed by chunkIndex.
-          if (!idb.objectStoreNames.contains(db.stores.chunks)) {
+          if ( !idb.objectStoreNames.contains(db.stores.chunks) ) {
             idb.createObjectStore(db.stores.chunks, { keyPath: 'chunkIndex' });
           }
         };
 
         request.onsuccess = (event) => resolve(event.target.result);
-        request.onerror = (event) => reject(event.target.error);
+        request.onerror   = (event) => reject(event.target.error);
 
       });
     },
@@ -5690,7 +5682,7 @@ const loadSplitBookData = {
         getRequest.onsuccess = () => {
           const storedCacheID = getRequest.result?.value ?? null;
 
-          if (storedCacheID !== currentCacheID) {
+          if ( storedCacheID !== currentCacheID ) {
             // cacheID changed — nuke all stored chunks and record the new one.
             chunkStore.clear();
             metaStore.put({ key: 'cacheID', value: currentCacheID });
@@ -5719,7 +5711,7 @@ const loadSplitBookData = {
         const request = store.get(chunkIndex);
 
         request.onsuccess = () => resolve(request.result ?? null);
-        request.onerror = () => reject(request.error);
+        request.onerror   = () => reject(request.error);
 
       });
     },
@@ -5739,7 +5731,7 @@ const loadSplitBookData = {
         const request = store.put({ chunkIndex, books });
 
         request.onsuccess = () => resolve();
-        request.onerror = () => reject(request.error);
+        request.onerror   = () => reject(request.error);
 
       });
     },
@@ -5793,9 +5785,10 @@ const _sfc_main$a = {
       maxWidth: "unset",
       loading: true,
       clickedBook: null,
-      peopleAlsoBoughtJSON: null,
-      bookSummaryJSON: null,
-      scrpt: null,
+      splitData: {
+         peopleAlsoBought: null,
+         bookSummary: null,
+      }, 
       imageLoaded: false,
       clientX: 0,
       clientY: 0,
@@ -5850,14 +5843,7 @@ const _sfc_main$a = {
 
   beforeUnmount: function() {
     
-    if ( this.scrpt ) {
-      this.scrpt.remove();
-      this.scrpt = null;
-    }
-    
     this.$compEmitter.off("afterWindowResize", this.onWindowResize);
-    this.peopleAlsoBoughtJSON = null;
-    this.bookSummaryJSON = null;
     
     // this.closeBookDetails();
     
@@ -5872,9 +5858,6 @@ const _sfc_main$a = {
   },
 
   computed: {
-    peopleAlsoBought: function () {
-      return this.book.peopleAlsoBought || this.peopleAlsoBoughtJSON;
-    },
     getMaxWidth: function() {
       if ( this.sticky.viewMode === 'spreadsheet' ) {
         return this.maxWidth;
@@ -6454,17 +6437,17 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ? (openBlock(), createBlock(_component_gallery_book_summary, {
                         key: 1,
                         book: _ctx.book,
-                        bookSummary: _ctx.bookSummaryJSON,
+                        bookSummary: _ctx.splitData.bookSummary,
                         mobileWidth: $options.mobileWidth
                       }, null, 8, ["book", "bookSummary", "mobileWidth"]))
                     : createCommentVNode("", true)
                 ], 2),
                 (_ctx.sticky.bookDetailSettings.carousel && !_ctx.loading)
                   ? (openBlock(), createElementBlock("div", _hoisted_12$1, [
-                      (($options.peopleAlsoBought && $options.peopleAlsoBought !== true) && !(_ctx.store.standalone && !_ctx.store.siteOnline))
+                      ((_ctx.splitData.peopleAlsoBought && _ctx.splitData.peopleAlsoBought !== true) && !(_ctx.store.standalone && !_ctx.store.siteOnline))
                         ? (openBlock(), createBlock(_component_gallery_carousel, {
                             detailsBook: _ctx.book,
-                            books: $options.peopleAlsoBought,
+                            books: _ctx.splitData.peopleAlsoBought,
                             key: _ctx.maxWidth,
                             mobileWidth: $options.mobileWidth
                           }, {
@@ -6490,7 +6473,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
       ])
     : createCommentVNode("", true)
 }
-const __unplugin_components_6$1 = /*#__PURE__*/_export_sfc$1(_sfc_main$a, [['render',_sfc_render$a],['__scopeId',"data-v-45913162"]]);
+const __unplugin_components_6$1 = /*#__PURE__*/_export_sfc$1(_sfc_main$a, [['render',_sfc_render$a],['__scopeId',"data-v-332b6df9"]]);
 
 /* unplugin-vue-components disabled */
 

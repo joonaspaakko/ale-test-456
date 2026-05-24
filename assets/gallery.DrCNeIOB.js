@@ -1,12 +1,12 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.ypCqSD9u.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.DL6w1NLh.js","./tippy.D5BJGoFS.js","./tippy.CccQYZjX.css","./jszip.HPtxegej.js","./gallery-search.DgxKH3SW.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.CTUr8Qk3.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./gallery-root.BzVeR_YH.css","./gallery-collections.hTn64hk8.js","./gallery-collections.CfEzgue_.css","./gallery-categories.1sYWzvhx.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.kuHxrp2K.js","./gallery-series.BUI5za12.css","./gallery-authors._AlovL5u.js","./gallery-authors.B_KccURD.css","./gallery-narrators.BAR3Aunf.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.3JvcWSrC.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./gallery-root.CNMtGF5-.js","./gallery-lazy.BVsJ3eWf.js","./lodash.Cy6RZ5mX.js","./jquery.3Hs3vqLI.js","./gallery-makeCoverUrl.BnX14Pi7.js","./content-script-helpers.D33XOOM_.js","./tippy.D5BJGoFS.js","./tippy.CccQYZjX.css","./jszip.BBGmtqMN.js","./gallery-search.ByMYf-In.js","./gallery-findSubPageSource.CB10VwdW.js","./gallery-findSubPageSource.CiwUdFXD.css","./gallery-page-title.DYNkxmBd.js","./gallery-page-title.DIkdMpKg.css","./gallery-search.BzpeHrzh.css","./index.9Z32wZYy.js","./howler.B9zQKWVB.js","./gallery-root.BzVeR_YH.css","./gallery-collections.B9j2HE_B.js","./gallery-collections.CfEzgue_.css","./gallery-categories.PBqMaBaD.js","./gallery-categories.TnEyMgJ6.css","./gallery-series.Dwm8ZDjq.js","./gallery-series.BUI5za12.css","./gallery-authors.CY3QTk5P.js","./gallery-authors.B_KccURD.css","./gallery-narrators.D8JpGY_I.js","./gallery-narrators.BS7nEc6d.css","./gallery-publishers.DiyNMn8R.js","./gallery-publishers.B7FoxqaF.css"])))=>i.map(i=>d[i]);
 import { m as makeCoverUrl } from './gallery-makeCoverUrl.BnX14Pi7.js';
 import { m as markRaw, o as openBlock, c as createElementBlock, a as createBaseVNode, _ as _export_sfc, w as withDirectives, v as vShow, n as normalizeStyle, b as createVNode, t as toDisplayString, d as createCommentVNode, r as resolveDirective, e as resolveComponent, f as withModifiers, g as normalizeClass, h as createBlock, F as Fragment, i as renderList, j as withCtx, k as normalizeProps, l as resolveDynamicComponent, p as renderSlot, q as createStaticVNode, s as createTextVNode, u as withKeys, x as vModelText, y as vModelCheckbox, z as vModelRadio, A as _$1, B as unref, C as shallowReactive, D as shallowRef, E as defineComponent, G as inject, H as h, I as reactive, J as computed, K as watch, L as ref, M as nextTick, N as provide, O as createApp } from './lodash.Cy6RZ5mX.js';
 import { c as commonjsGlobal, g as getDefaultExportFromCjs } from './jquery.3Hs3vqLI.js';
 import { r as require$$0, s as shortkey } from './index.9Z32wZYy.js';
-import { t as toDate, c as constructFrom, n as normalizeDates, s as startOfDay, d as differenceInCalendarDays, m as millisecondsInHour, a as millisecondsInMinute, g as getTimezoneOffsetInMilliseconds, b as minutesInDay, e as minutesInMonth, f as getDefaultOptions, h as format, F as Fuse, i as axios, U as Url, j as secondsToTimeString, k as timeStringToSeconds, l as helpers } from './content-script-helpers.DL6w1NLh.js';
+import { t as toDate, c as constructFrom, n as normalizeDates, s as startOfDay, d as differenceInCalendarDays, m as millisecondsInHour, a as millisecondsInMinute, g as getTimezoneOffsetInMilliseconds, b as minutesInDay, e as minutesInMonth, f as getDefaultOptions, h as format, F as Fuse, i as axios, U as Url, j as secondsToTimeString, k as timeStringToSeconds, l as helpers } from './content-script-helpers.D33XOOM_.js';
 import { e as enUS, c as createStore, m as mitt, p as plugin } from './tippy.D5BJGoFS.js';
 import { h as howler } from './howler.B9zQKWVB.js';
-import './jszip.HPtxegej.js';
+import './jszip.BBGmtqMN.js';
 
 const _hoisted_1$13 = {
   viewBox: "0 0 24 24",
@@ -1403,9 +1403,9 @@ const __unplugin_components_8 = markRaw({ name: 'mage-chevron-down-square-fill',
 const _sfc_main$e = {
   props: {
     statusMessage: { type: String, default: '' },
-    progress: { type: Object, required: true },
-    isSyncing: { type: Boolean, default: false },
-    stages: { type: Array, required: true },
+    progress     : { type: Object, required: true },
+    isSyncing    : { type: Boolean, default: false },
+    stages       : { type: Array, required: true },
   },
 
   methods: {
@@ -1461,17 +1461,17 @@ function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
       : createCommentVNode("", true),
     ($props.isSyncing || $props.progress.stage)
       ? (openBlock(), createElementBlock("div", _hoisted_6$7, [
-          (openBlock(true), createElementBlock(Fragment, null, renderList($props.stages, (s) => {
+          (openBlock(true), createElementBlock(Fragment, null, renderList($props.stages, (stage) => {
             return (openBlock(), createElementBlock("div", {
-              key: s,
-              class: normalizeClass(['stage', { active: $props.progress.stage === s, done: $options.stageIsDone(s) }])
-            }, toDisplayString(s), 3))
+              key: stage,
+              class: normalizeClass(["stage", { active: $props.progress.stage === stage, done: $options.stageIsDone(stage) }])
+            }, toDisplayString(stage), 3))
           }), 128))
         ]))
       : createCommentVNode("", true)
   ]))
 }
-const __unplugin_components_7 = /*#__PURE__*/_export_sfc(_sfc_main$e, [['render',_sfc_render$e],['__scopeId',"data-v-b62f6d98"]]);
+const __unplugin_components_7 = /*#__PURE__*/_export_sfc(_sfc_main$e, [['render',_sfc_render$e],['__scopeId',"data-v-a7eb5573"]]);
 
 const _hoisted_1$w = {
   viewBox: "0 0 24 24",
@@ -3190,7 +3190,7 @@ const githubUtilsMixin = {
      * @returns {string}
      */
     formatDate( iso ) {
-      if ( !iso ) return '—';
+      if ( !iso ) return '';
       const date = parseISO( iso );
       if ( isToday( date ) ) return 'Today';
       if ( isYesterday( date ) ) return 'Yesterday';
@@ -3204,7 +3204,7 @@ const githubUtilsMixin = {
      * @returns {string}
      */
     formatDateTime( iso ) {
-      if ( !iso ) return '—';
+      if ( !iso ) return '';
       return format( parseISO( iso ), 'MMM d, yyyy, HH:mm' );
     },
 
@@ -3214,14 +3214,14 @@ const githubUtilsMixin = {
      * @returns {string}
      */
     formatSize( kb ) {
-      if ( kb == null ) return '—';
+      if ( kb == null ) return '';
       if ( kb < 1024 ) return `${kb} KB`;
       return `${( kb / 1024 ).toFixed( 1 )} MB`;
     },
 
     /**
      * Strips characters that are invalid in a GitHub repo name.
-     * GitHub allows letters, numbers, hyphens, and underscores — max 100 characters.
+     * GitHub allows letters, numbers, hyphens, and underscores (max 100 characters).
      * @param {string} value
      * @returns {string}
      */
@@ -3234,21 +3234,23 @@ const githubUtilsMixin = {
 
     /**
      * Computes the Git blob SHA-1 for raw bytes.
-     * This is the same hash GitHub uses internally — if our hash matches a cached entry,
+     * This is the same hash GitHub uses internally. If our hash matches a cached entry,
      * the file is already on GitHub and can be skipped without uploading.
      * Git prepends a `blob <size>\0` header before hashing, which we replicate here.
      * @param {Uint8Array} contentBytes
      * @returns {Promise<string>}
      */
     async gitBlobShaBytes( contentBytes ) {
+      
       const headerBytes = new TextEncoder().encode( `blob ${contentBytes.length}\0` );
       const full = new Uint8Array( headerBytes.length + contentBytes.length );
+      
       full.set( headerBytes, 0 );
       full.set( contentBytes, headerBytes.length );
+      
       const hashBuffer = await crypto.subtle.digest( 'SHA-1', full );
-      return Array.from( new Uint8Array( hashBuffer ) )
-        .map( b => b.toString( 16 ).padStart( 2, '0' ) )
-        .join( '' );
+      return Array.from( new Uint8Array( hashBuffer ) ).map( b => b.toString( 16 ).padStart( 2, '0' ) ).join( '' );
+      
     },
 
     /**
@@ -3276,6 +3278,16 @@ const _sfc_main$d = {
   },
 
   emits: ['tag-add', 'tag-remove'],
+
+  computed: {
+    nonAleTopics() {
+      return this.repoInfo.topics.filter( t => !this.aleTopics.includes( t ) );
+    },
+
+    aleRepoTopics() {
+      return this.repoInfo.topics.filter( t => this.aleTopics.includes( t ) );
+    },
+  },
 };
 
 const _hoisted_1$r = { class: "repo-info-card" };
@@ -3320,7 +3332,7 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
           ($props.repoInfo.pagesStatus)
             ? (openBlock(), createElementBlock("span", {
                 key: 0,
-                class: normalizeClass(['pages-status', $props.repoInfo.pagesStatus])
+                class: normalizeClass(["pages-status", $props.repoInfo.pagesStatus])
               }, toDisplayString($props.repoInfo.pagesStatus), 3))
             : createCommentVNode("", true)
         ], 8, _hoisted_2$c))
@@ -3373,14 +3385,14 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     createBaseVNode("div", _hoisted_14$3, [
       _cache[8] || (_cache[8] = createBaseVNode("span", { class: "info-label" }, "Topics", -1)),
       createBaseVNode("span", _hoisted_15$3, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList($props.repoInfo.topics.filter(t => !$props.aleTopics.includes(t)), (topicName) => {
+        (openBlock(true), createElementBlock(Fragment, null, renderList($options.nonAleTopics, (topicName) => {
           return (openBlock(), createElementBlock("span", {
             key: topicName,
             class: "repo-topic"
           }, toDisplayString(topicName), 1))
         }), 128)),
         createBaseVNode("span", _hoisted_16$3, [
-          (openBlock(true), createElementBlock(Fragment, null, renderList($props.repoInfo.topics.filter(t => $props.aleTopics.includes(t)), (topicName) => {
+          (openBlock(true), createElementBlock(Fragment, null, renderList($options.aleRepoTopics, (topicName) => {
             return (openBlock(), createElementBlock("span", {
               key: topicName,
               class: "repo-topic ale-topic"
@@ -3406,7 +3418,7 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]))
 }
-const __unplugin_components_6 = /*#__PURE__*/_export_sfc(_sfc_main$d, [['render',_sfc_render$d],['__scopeId',"data-v-45e8a16f"]]);
+const __unplugin_components_6 = /*#__PURE__*/_export_sfc(_sfc_main$d, [['render',_sfc_render$d],['__scopeId',"data-v-153a91a5"]]);
 
 const _hoisted_1$q = {
   viewBox: "0 0 24 24",
@@ -3440,10 +3452,15 @@ const __unplugin_components_0$6 = markRaw({ name: 'akar-icons-circle-plus', rend
 /* unplugin-vue-components disabled */
 
 const _sfc_main$c = {
+
   directives: {
     clickOutside: {
       mounted( el, binding ) {
-        el.clickOutsideHandler = e => { if ( !el.contains( e.target ) ) binding.value( e ); };
+        el.clickOutsideHandler = ( event ) => {
+          if ( !el.contains( event.target ) ) {
+            binding.value( event );
+          }
+        };
         document.addEventListener( 'mousedown', el.clickOutsideHandler );
       },
       unmounted( el ) {
@@ -3472,6 +3489,7 @@ const _sfc_main$c = {
 
   computed: {
     filteredRepos() {
+    
       const source = this.showAllRepos ? this.repos : this.repos.filter( r => r.isAleRepo );
 
       if ( !this.dropdownSearch.trim() ) return source;
@@ -3483,35 +3501,51 @@ const _sfc_main$c = {
       }
 
       return this.fuseInstance.search( this.dropdownSearch ).map( r => r.item );
+      
     },
   },
 
   watch: {
     dropdownOpen( isOpen ) {
+    
       if ( isOpen ) this.$nextTick( () => this.$refs.searchInput?.focus() );
       else this.dropdownSearch = '';
+      
     },
     repos( newRepos ) {
+    
       this.fuseInstance = new Fuse( newRepos, { keys: ['name'], threshold: 0.4 } );
       this.fuseSource = newRepos;
+      
     },
   },
 
   methods: {
     /** Toggles the dropdown open/closed. */
-    toggleDropdown() { this.dropdownOpen = !this.dropdownOpen; },
+    toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    },
 
     /** Closes the dropdown. */
-    closeDropdown() { this.dropdownOpen = false; },
+    closeDropdown() {
+      this.dropdownOpen = false;
+    },
 
     /**
      * Selects a repo by name, emits the update, and closes the dropdown.
      * @param {string} name
      */
-    select( name ) { this.$emit( 'update:modelValue', name ); this.closeDropdown(); },
+    select( name ) {
+      this.$emit( 'update:modelValue', name );
+      this.closeDropdown();
+    },
 
     /** Selects the first visible result when the user presses Enter in the search field. */
-    selectFirstResult() { if ( this.filteredRepos.length > 0 ) this.select( this.filteredRepos[0].name ); },
+    selectFirstResult() {
+      if ( this.filteredRepos.length > 0 ) {
+        this.select( this.filteredRepos[0].name );
+      }
+    },
   },
 };
 
@@ -3621,7 +3655,7 @@ function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     [_directive_click_outside, $options.closeDropdown]
   ])
 }
-const __unplugin_components_5$2 = /*#__PURE__*/_export_sfc(_sfc_main$c, [['render',_sfc_render$c],['__scopeId',"data-v-8576c123"]]);
+const __unplugin_components_5$2 = /*#__PURE__*/_export_sfc(_sfc_main$c, [['render',_sfc_render$c],['__scopeId',"data-v-f6143edf"]]);
 
 /* unplugin-vue-components disabled */
 
@@ -3641,7 +3675,7 @@ const _hoisted_4$7 = { class: "failed-actions" };
 function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("div", _hoisted_1$o, [
     createBaseVNode("div", _hoisted_2$a, [
-      _cache[1] || (_cache[1] = createStaticVNode("<div class=\"failed-icon\" data-v-1d429ee9><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-1d429ee9><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-1d429ee9></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-1d429ee9></path></svg></div><div class=\"failed-title\" data-v-1d429ee9>Upload failed</div>", 2)),
+      _cache[1] || (_cache[1] = createStaticVNode("<div class=\"failed-icon\" data-v-9f6962c1><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-9f6962c1><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#ef4444\" stroke-width=\"1.5\" data-v-9f6962c1></circle><path d=\"M8 8l8 8M16 8l-8 8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\" data-v-9f6962c1></path></svg></div><div class=\"failed-title\" data-v-9f6962c1>Upload failed</div>", 2)),
       createBaseVNode("div", _hoisted_3$7, toDisplayString($props.message), 1),
       createBaseVNode("div", _hoisted_4$7, [
         createBaseVNode("button", {
@@ -3652,7 +3686,7 @@ function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]))
 }
-const __unplugin_components_4 = /*#__PURE__*/_export_sfc(_sfc_main$b, [['render',_sfc_render$b],['__scopeId',"data-v-1d429ee9"]]);
+const __unplugin_components_4 = /*#__PURE__*/_export_sfc(_sfc_main$b, [['render',_sfc_render$b],['__scopeId',"data-v-9f6962c1"]]);
 
 const _hoisted_1$n = {
   viewBox: "0 0 256 256",
@@ -3719,28 +3753,36 @@ const _sfc_main$a = {
   },
   emits: ['back'],
   computed: {
+  
     building() { return this.pagesStatus === 'building'; },
     built()    { return this.pagesStatus === 'built'; },
     errored()  { return this.pagesStatus === 'errored'; },
 
     statusClass() {
+    
       if ( this.building ) return 'is-building';
       if ( this.built )    return 'is-built';
       if ( this.errored )  return 'is-errored';
       return 'is-pending';
+      
     },
 
     statusLabel() {
+    
       if ( this.building ) return 'Publishing site…';
       if ( this.built )    return 'Site is live';
       if ( this.errored )  return 'Publish failed';
       return 'Checking status…';
+      
     },
 
     cleanPagesUrl() {
+    
       if ( !this.pagesUrl ) return '';
       return this.pagesUrl.replace( /^https?:\/\//, '' ).replace( /\/$/, '' );
+      
     },
+    
   },
 };
 
@@ -3761,7 +3803,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (openBlock(), createElementBlock("div", _hoisted_1$k, [
     createBaseVNode("div", _hoisted_2$9, [
-      _cache[1] || (_cache[1] = createStaticVNode("<div class=\"complete-check-icon\" data-v-39b255d6><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-39b255d6><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-39b255d6></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-39b255d6></path></svg></div><div class=\"complete-title\" data-v-39b255d6>Upload complete</div>", 2)),
+      _cache[1] || (_cache[1] = createStaticVNode("<div class=\"complete-check-icon\" data-v-be937a1d><svg viewBox=\"0 0 24 24\" fill=\"none\" width=\"40\" height=\"40\" data-v-be937a1d><circle cx=\"12\" cy=\"12\" r=\"11\" stroke=\"#4ade80\" stroke-width=\"1.5\" data-v-be937a1d></circle><path d=\"M7 12.5l3.5 3.5 6.5-7\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-be937a1d></path></svg></div><div class=\"complete-title\" data-v-be937a1d>Upload complete</div>", 2)),
       ($props.pagesUrl)
         ? (openBlock(), createElementBlock("a", {
             key: 0,
@@ -3800,7 +3842,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]))
 }
-const __unplugin_components_3$2 = /*#__PURE__*/_export_sfc(_sfc_main$a, [['render',_sfc_render$a],['__scopeId',"data-v-39b255d6"]]);
+const __unplugin_components_3$2 = /*#__PURE__*/_export_sfc(_sfc_main$a, [['render',_sfc_render$a],['__scopeId',"data-v-be937a1d"]]);
 
 const _hoisted_1$j = {
   viewBox: "0 0 56 56",
@@ -3899,7 +3941,7 @@ function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 8, _hoisted_1$h))
 }
-const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$9, [['render',_sfc_render$9],['__scopeId',"data-v-ee0cf341"]]);
+const __unplugin_components_2 = /*#__PURE__*/_export_sfc(_sfc_main$9, [['render',_sfc_render$9],['__scopeId',"data-v-d7c2f418"]]);
 
 const _hoisted_1$g = {
   viewBox: "0 0 24 24",
@@ -4002,7 +4044,7 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]))
 }
-const __unplugin_components_1$2 = /*#__PURE__*/_export_sfc(_sfc_main$8, [['render',_sfc_render$8],['__scopeId',"data-v-1162c84b"]]);
+const __unplugin_components_1$2 = /*#__PURE__*/_export_sfc(_sfc_main$8, [['render',_sfc_render$8],['__scopeId',"data-v-829ce763"]]);
 
 /* unplugin-vue-components disabled */
 
@@ -4081,22 +4123,31 @@ const githubIdbMixin = {
   methods: {
     /**
      * Opens (or returns the cached handle to) the IndexedDB database.
-     * We reuse the same connection for the whole session — opening a new one per call
+     * We reuse the same connection for the whole session; opening a new one per call
      * is wasteful and can cause contention on some browsers.
      * @returns {Promise<IDBDatabase>}
      */
     idbOpen() {
+    
+      // If we already have a connection, return it
       if ( this.idb ) return Promise.resolve( this.idb );
+      
+      // Otherwise, open a new connection and cache it for next time
       return new Promise( ( resolve, reject ) => {
+        
         const req = indexedDB.open( 'ale-github-blob-cache', 1 );
-        // onupgradeneeded fires on first open (or after a version bump) — this is where the schema is defined
+        
         req.onupgradeneeded = e => e.target.result.createObjectStore( 'blobs' );
+        
         req.onsuccess = e => {
           this.idb = e.target.result;
           resolve( this.idb );
         };
+        
         req.onerror = () => reject( req.error );
+        
       });
+      
     },
 
     /**
@@ -4109,25 +4160,33 @@ const githubIdbMixin = {
      */
     async idbCacheLoad( owner, repo ) {
       try {
+      
         const db = await this.idbOpen();
         return await new Promise( ( resolve, reject ) => {
+        
           const prefix = `${owner}/${repo}/`;
-          // IDB keys are sorted — bound(prefix, prefix + '\uffff') matches everything starting with the prefix
+          // IDB keys are sorted, so bound(prefix, prefix + '\uffff') matches everything starting with the prefix
           const range  = IDBKeyRange.bound( prefix, prefix + '\uffff' );
           const result = {};
+          
           const req = db.transaction( 'blobs', 'readonly' ).objectStore( 'blobs' ).openCursor( range );
           req.onsuccess = e => {
             const cursor = e.target.result;
             if ( cursor ) {
               result[ cursor.key.slice( prefix.length ) ] = cursor.value;
               cursor.continue();
-            } else {
+            }
+            else {
               resolve( result );
             }
           };
+          
           req.onerror = () => reject( req.error );
+          
         });
-      } catch {
+        
+      }
+      catch {
         return {};
       }
     },
@@ -4142,21 +4201,27 @@ const githubIdbMixin = {
      */
     async idbCacheSave( owner, repo, hash, sha ) {
       try {
+      
         const db = await this.idbOpen();
         await new Promise( ( resolve, reject ) => {
+        
           const tx = db.transaction( 'blobs', 'readwrite' );
+          
           tx.objectStore( 'blobs' ).put( sha, `${owner}/${repo}/${hash}` );
           tx.oncomplete = resolve;
           tx.onerror    = () => reject( tx.error );
+          
         });
-      } catch ( err ) {
+        
+      }
+      catch ( err ) {
         console.warn( 'IDB cache write failed:', err );
       }
     },
 
     /**
      * Validates the cache against the repo's creation date.
-     * If the repo was deleted and recreated, its `created_at` changes — old blob SHAs no longer
+     * If the repo was deleted and recreated, its `created_at` changes, so old blob SHAs no longer
      * exist on GitHub even if file content is identical, so we wipe the cache and record
      * the new identity. If this is the first upload there's nothing to wipe.
      * @param {string} owner
@@ -4165,6 +4230,7 @@ const githubIdbMixin = {
      */
     async idbValidateRepoCache( owner, repo, repoCreatedAt ) {
       try {
+      
         const db      = await this.idbOpen();
         const metaKey = `${owner}/${repo}/__meta`;
 
@@ -4175,10 +4241,10 @@ const githubIdbMixin = {
           req.onerror   = () => reject( req.error );
         });
 
-        // Cache is still valid — nothing to do
+        // Cache is still valid, nothing to do
         if ( stored?.createdAt === repoCreatedAt ) return;
 
-        // Creation date mismatch — wipe all cached SHAs for this repo and record the new date
+        // Creation date mismatch, so wipe all cached SHAs for this repo and record the new date
         await new Promise( ( resolve, reject ) => {
           const tx    = db.transaction( 'blobs', 'readwrite' );
           const store = tx.objectStore( 'blobs' );
@@ -4189,8 +4255,10 @@ const githubIdbMixin = {
           tx.onerror    = () => reject( tx.error );
         });
 
-        if ( stored?.createdAt != null ) console.info( `Blob cache cleared for ${owner}/${repo} — repo was recreated` );
-      } catch ( err ) {
+        if ( stored?.createdAt != null ) console.info( `Blob cache cleared for ${owner}/${repo} (repo was recreated)` );
+        
+      }
+      catch ( err ) {
         console.warn( 'IDB cache validation failed:', err );
       }
     },
@@ -4203,20 +4271,28 @@ const githubIdbMixin = {
      */
     async clearBlobCache( owner, repo ) {
       try {
+      
         const db = await this.idbOpen();
         await new Promise( ( resolve, reject ) => {
+        
           const tx    = db.transaction( 'blobs', 'readwrite' );
           const store = tx.objectStore( 'blobs' );
+          
           if ( owner && repo ) {
             const prefix = `${owner}/${repo}/`;
             store.delete( IDBKeyRange.bound( prefix, prefix + '\uffff' ) );
-          } else {
+          }
+          else {
             store.clear();
           }
+          
           tx.oncomplete = resolve;
           tx.onerror    = () => reject( tx.error );
+          
         });
-      } catch ( err ) {
+        
+      }
+      catch ( err ) {
         console.warn( 'IDB cache clear failed:', err );
       }
     },
@@ -31726,6 +31802,8 @@ const githubAuthMixin = {
   },
 
   async mounted() {
+  
+    // Initialize Supabase
     this.supabaseClient = createClient( this.supabaseConfig.url, this.supabaseConfig.key, {
       auth: {
         flowType: 'pkce',
@@ -31741,11 +31819,13 @@ const githubAuthMixin = {
       try {
         await this.loadProfile();
         await this.loadRepos();
-      } catch {
-        // Token was revoked on GitHub — wipe it and fall through to manual auth
+      }
+      catch {
+        // Token was revoked on GitHub, so wipe it and fall back to manual auth
         await this.clearSession();
       }
     }
+    
   },
 
   methods: {
@@ -31755,20 +31835,26 @@ const githubAuthMixin = {
      * Supabase exchanges the code + stored code_verifier for a full session server-side.
      */
     async auth() {
+    
       this.authenticating = true;
       this.statusMessage  = 'Opening GitHub login...';
+      
       try {
+      
         const { data, error } = await this.supabaseClient.auth.signInWithOAuth({
           provider: 'github',
           options: {
-            redirectTo        : chrome.identity.getRedirectURL(),
+            redirectTo: chrome.identity.getRedirectURL(),
             skipBrowserRedirect: true,
-            scopes            : 'public_repo',
+            scopes: 'public_repo',
           },
         });
+        
         if ( error ) throw error;
-
+        
+        // NOTE: if I ever get the Firefox extension back up and running, I don't think it supports this method.
         chrome.identity.launchWebAuthFlow( { url: data.url, interactive: true }, async ( responseUrl ) => {
+          
           if ( !responseUrl ) {
             this.statusMessage  = 'Login cancelled.';
             this.authenticating = false;
@@ -31776,64 +31862,92 @@ const githubAuthMixin = {
           }
 
           this.statusMessage = 'Authenticating...';
+          
           try {
+          
+            // Extract the authorization code from the response URL
             const code = new URL( responseUrl ).searchParams.get( 'code' );
             if ( !code ) throw new Error( 'No authorization code in response' );
 
+            // This is the critical step where the PKCE flow completes and we get a GitHub token without it ever touching the client.
             const { data: session, error: sessionError } = await this.supabaseClient.auth.exchangeCodeForSession( code );
             if ( sessionError ) throw sessionError;
 
+            // Store the token in memory...
             this.githubToken = session.session.provider_token;
+            // ABORT!
             if ( !this.githubToken ) throw new Error( 'No GitHub token in session' );
-
-            // Persist the token separately — Supabase drops provider_token after JWT refresh
+            // Store the token in Chrome local storage. Supabase drops provider_token after JWT refresh
             await chrome.storage.local.set({ github_token: this.githubToken });
 
             this.octokit = new Octokit({ auth: this.githubToken });
             this.statusMessage = '';
             await this.loadProfile();
             await this.loadRepos();
-          } catch ( err ) {
+            
+          } 
+          catch ( err ) {
+          
             console.error( err );
             this.statusMessage = 'Error: ' + err.message;
-          } finally {
+            
+          } 
+          finally {
+          
             this.authenticating = false;
+            
           }
+          
         });
-      } catch ( err ) {
+        
+      }
+        
+      catch ( err ) {
+      
         console.error( err );
         this.statusMessage  = 'Error: ' + err.message;
         this.authenticating = false;
+        
       }
+      
     },
 
     /** Wipes the Supabase session and persisted token. */
     async clearSession() {
+    
       await this.supabaseClient?.auth.signOut();
       await chrome.storage.local.remove([ 'github_token' ]);
+      
       this.octokit     = null;
       this.githubToken = null;
       this.profile     = {};
+      
     },
 
     /** Signs out and resets all UI state. */
     async signOut() {
+    
       await this.clearSession();
+      
       this.repos         = [];
       this.selectedRepo  = '';
       this.statusMessage = '';
       this.progress      = { stage: '', total: 0, done: 0, percent: 0 };
+      
     },
 
     /** Fetches the authenticated user's GitHub profile and stores it in `profile`. */
     async loadProfile() {
+    
       const { data } = await this.octokit.rest.users.getAuthenticated();
+      
       this.profile = {
         login      : data.login,
         name       : data.name,
         avatar     : data.avatar_url,
         publicRepos: data.public_repos,
       };
+      
     },
   },
 };
@@ -31846,21 +31960,43 @@ const githubReposMixin = {
       newRepoName: 'my-audible-library',
       showAllRepos: false,
       aleTopics: ['audible-library-extractor-gallery'],
+      createRepoTimeout: null,
     };
   },
 
   computed: {
     selectedRepo: {
-      get() { return this.$store.state.sticky.githubSelectedRepo; },
-      set( val ) { this.$store.commit( 'stickyProp', { key: 'githubSelectedRepo', value: val } ); },
+      get() { 
+      
+        return this.$store.state.sticky.githubSelectedRepo; 
+        
+      },
+      set( val ) { 
+        
+        this.$store.commit( 'stickyProp', { key: 'githubSelectedRepo', value: val } ); 
+        
+      },
     },
   },
 
   watch: {
     async selectedRepo( newRepo, oldRepo ) {
+    
+      // Reset progress switching between repos, but not on initial load (oldRepo is null)
+      // or when re-selecting the same repo (newRepo === oldRepo)
       if ( newRepo !== oldRepo ) this.resetProgress();
+      
+      // Load info for the new repo (Pages status, commit count, etc). This also updates
+      // the default commit message based on the new repo's commit count.
       await this.loadSelectedRepoData( newRepo );
+      
     },
+  },
+
+  beforeUnmount() {
+  
+    clearTimeout( this.createRepoTimeout );
+    
   },
 
   methods: {
@@ -31869,16 +32005,20 @@ const githubReposMixin = {
      * Restores the previously selected repo from local storage, or defaults to the first ALE repo.
      */
     async loadRepos() {
+      
       this.reposLoading = true;
+      
       try {
+      
+        // Get all public repos for the authenticated user
         const data = await this.octokit.paginate( this.octokit.rest.repos.listForAuthenticatedUser, {
           visibility : 'public',
           affiliation: 'owner',
           sort       : 'pushed',
           per_page   : 100,
         });
-
-        // Topics come from the list response — no extra API calls needed.
+        
+        // Topics come in the list response, no extra API calls needed.
         // Pages info and commit count are fetched lazily when a repo is selected.
         this.repos = data.map( r => {
           const topics = r.topics || [];
@@ -31898,18 +32038,21 @@ const githubReposMixin = {
           };
         });
 
-        // Restore the last selected repo — if it no longer exists, fall back to the first ALE repo.
+        // Restore the last selected repo. If it no longer exists, fall back to the first ALE repo.
         // If the value doesn't change, the watcher won't fire, so call loadSelectedRepoData explicitly.
-        // If it does change, the watcher handles it — don't call both or they race.
+        // If it does change, the watcher handles it, so don't call both.
         const stored = this.$store.state.sticky.githubSelectedRepo;
         const storedExists = stored && this.repos.find( r => r.name === stored );
         const newSelected = storedExists ? stored : ( this.repos.find( r => r.isAleRepo )?.name || '' );
         const watcherWillFire = newSelected !== this.selectedRepo;
         this.selectedRepo = newSelected;
         if ( !watcherWillFire ) await this.loadSelectedRepoData( newSelected );
-      } finally {
+        
+      }
+      finally {
         this.reposLoading = false;
       }
+      
     },
 
     /**
@@ -31919,13 +32062,18 @@ const githubReposMixin = {
      * @param {string} repoName
      */
     async loadSelectedRepoData( repoName ) {
+    
       if ( !repoName || repoName === this.newRepoKey ) return;
+      
       const info = this.repos.find( r => r.name === repoName );
       if ( !info ) return;
+      
       if ( info.pagesStatus === null ) await this.fetchRepoPages( info );
       if ( info.pagesStatus === 'building' ) this.pollPagesBuild( this.profile.login, repoName );
       if ( info.commitCount === null ) await this.fetchRepoDetails( info );
+      
       await this.updateDefaultCommitMessage( repoName, info.commitCount );
+      
     },
 
     /**
@@ -31934,29 +32082,43 @@ const githubReposMixin = {
      */
     async fetchRepoPages( repoEntry ) {
       try {
+      
         const res = await this.ghGet( `repos/${this.profile.login}/${repoEntry.name}/pages` );
         repoEntry.pagesUrl    = res.data.html_url;
         repoEntry.pagesStatus = res.data.status;
-      } catch {
-        // Pages not enabled or not accessible — treat as not set up
+        
+      }
+      catch {
+      
+        // Pages not enabled or not accessible, so treat it as not set up
         repoEntry.pagesStatus = 'none';
+        
       }
     },
 
     /**
      * Lazily fetches the commit count for a single repo.
-     * Uses the Link header pagination trick — request 1 commit per page, then read the "last"
+     * Uses the Link header pagination trick: request 1 commit per page and read the "last"
      * page number from the Link header. This avoids fetching and counting all commits.
      * @param {Object} repoEntry
      */
     async fetchRepoDetails( repoEntry ) {
       try {
+
         const res   = await this.ghGet( `repos/${this.profile.login}/${repoEntry.name}/commits`, { per_page: 1 } );
         const match = ( res.headers?.link || '' ).match( /page=(\d+)>; rel="last"/ );
         // If there's no Link header, the repo has only 1 commit (no pagination needed)
         repoEntry.commitCount = match ? parseInt( match[1] ) : 1;
-      } catch {
-        repoEntry.commitCount = 0;
+
+      }
+      catch ( err ) {
+        if ( err.response?.status === 404 ) {
+          repoEntry.commitCount = 0;
+        }
+        else {
+          console.error( `Failed to fetch commit count for ${repoEntry.name}:`, err );
+          throw err;
+        }
       }
     },
 
@@ -31966,51 +32128,83 @@ const githubReposMixin = {
      * the initial commit before the Pages API will accept a source configuration.
      */
     async createRepo() {
+
+      // Don't allow creating an empty repo
       const name = this.newRepoName.trim();
       if ( !name ) return;
+
+      // Clear any pending timeout from a previous attempt
+      clearTimeout( this.createRepoTimeout );
+      this.statusMessage = '';
+
       try {
+      
+        // CREATE NEW REPO
         this.statusMessage = `Creating "${name}"...`;
         const { data: newRepo } = await this.octokit.rest.repos.createForAuthenticatedUser({
           name,
           private  : false,
           auto_init: true, // Creates an initial commit so the branch exists immediately
         });
+        
+        // Get branch name from response just to be safe, but it should always be "main" or "master"
         const branch = newRepo.default_branch;
 
+        // Tag repo with ale topic automatically for easy discovery in the repo dropdown.
         await this.tagRepoWithAle( name );
 
-        // Pages setup can fail if the initial commit isn't ready yet — retry with a short delay between attempts
+        // STARTING PAGES SETUP (RETRY LOOP)
         this.statusMessage = `Setting up website for "${name}"...`;
+        
+        // Pages setup can fail if the initial commit isn't ready yet, so retry with a short delay
         let pagesEnabled = false;
         for ( let attempt = 0; attempt < 6; attempt++ ) {
           try {
-            const res = await this.ghPost(
-              `repos/${this.profile.login}/${name}/pages`,
-              { source: { branch, path: '/' } }
-            );
+          
+            const res = await this.ghPost(`repos/${this.profile.login}/${name}/pages`, { source: { branch, path: '/' } });
+            
+            // 201 = created, 409 = already enabled; either way we're good
             if ( res.status === 201 || res.status === 409 ) {
-              // 201 = created, 409 = already enabled — both mean we're good
               pagesEnabled = true;
               break;
             }
-          } catch ( err ) {
+            
+          }
+          catch ( err ) {
+          
+            // If it's a 409, it means Pages is already enabled, so we can stop retrying. Any other error is worth retrying over.
             if ( err.response?.status === 409 ) {
               pagesEnabled = true;
               break;
             }
+            
           }
+          
+          // Wait 2 seconds before trying again...
           await new Promise( r => setTimeout( r, 2000 ) );
+          
         }
 
+        // FINISHED PAGES SETUP: if it still isn't enabled, show a warning but continue anyway.
         if ( !pagesEnabled ) console.warn( 'Could not enable Pages automatically after retries' );
+        
+        // Reload repo list to include the new repo
         await this.loadRepos();
+        
+        // Select new repo
         this.selectedRepo = name;
+        
+        // Finalize
         this.newRepoName  = '';
-        this.statusMessage = pagesEnabled
-          ? `"${name}" created with website enabled!`
-          : `"${name}" created! Enable GitHub Pages manually in repo settings.`;
-        setTimeout( () => { this.statusMessage = ''; }, 5000 );
-      } catch ( err ) {
+        this.statusMessage = pagesEnabled ?
+          `"${name}" created with website enabled!` :
+          `"${name}" created! Enable GitHub Pages manually in repo settings.`;
+        
+        // Clear status message after 5 seconds to keep the UI clean, but allow time for the user to read it in case of slow loading.
+        this.createRepoTimeout = setTimeout( () => { this.statusMessage = ''; }, 5000 );
+        
+      }
+      catch ( err ) {
         this.statusMessage = 'Failed to create: ' + err.message;
       }
     },
@@ -32022,22 +32216,38 @@ const githubReposMixin = {
      */
     async tagRepoWithAle( name, options = { action: 'add' } ) {
       try {
-        const repo          = this.repos.find( r => r.name === name );
-        const currentTopics = repo?.topics || [];
-        const nextTopics    = options.action === 'remove'
-          ? currentTopics.filter( t => !this.aleTopics.includes( t ) )
-          : Array.from( new Set( [...currentTopics, ...this.aleTopics] ) );
 
+        const repo = this.repos.find( r => r.name === name );
+        if ( !repo ) return;
+
+        const currentTopics = repo.topics;
+
+        // Add or remove ALE topics based on the action. 
+        // Adding is a simple union, removing is a filter. 
+        let nextTopics;
+        if ( options.action === 'remove' ) {
+          nextTopics = currentTopics.filter( t => !this.aleTopics.includes( t ) );
+        }
+        else {
+          nextTopics = Array.from( new Set( [...currentTopics, ...this.aleTopics] ) );
+        }
+
+        // Actually update topics via the API and get the updated list in response
         const res = await this.ghPut( `repos/${this.profile.login}/${name}/topics`, { names: nextTopics } );
 
-        if ( repo ) {
-          repo.topics    = res.data.names;
-          repo.isAleRepo = !!_.intersection( res.data.names, this.aleTopics ).length;
-          // If the selected repo was just untagged while in ALE-only view, switch to "show all"
-          // so it doesn't disappear from the dropdown while the user is still looking at it.
-          if ( options.action === 'remove' && !repo.isAleRepo && !this.showAllRepos ) this.showAllRepos = true;
+        // Update local state
+        repo.topics    = res.data.names;
+        // A repo is an ALE repo if it has any of our marker topic(s)
+        repo.isAleRepo = !!_.intersection( res.data.names, this.aleTopics ).length;
+
+        // If the selected repo was just untagged while in ALE-only view, switch to "show all"
+        // so it doesn't disappear from the dropdown while the user is still looking at it.
+        if ( options.action === 'remove' && !repo.isAleRepo && !this.showAllRepos ) {
+          this.showAllRepos = true;
         }
-      } catch ( err ) {
+        
+      }
+      catch ( err ) {
         console.error( 'Failed to update topics:', err );
       }
     },
@@ -32049,22 +32259,46 @@ const githubReposMixin = {
      * @param {number|null} knownCount Already-fetched commit count, or null to fetch it
      */
     async updateDefaultCommitMessage( repo, knownCount = null ) {
+    
+      // Don't update if the repo isn't selected, or if we're creating a new repo
       if ( !repo || repo === this.newRepoKey || !this.githubToken ) return;
+      
+      // Add version number to the commit message if available, to help users identify
+      // which version of ALE they used for the upload. This is especially helpful if they
+      // have multiple versions of ALE over time, or if they're uploading on behalf of
+      // someone else and want to keep track of it.
       const versionStr = this.version ? ` · ALE v${this.version}` : '';
+      
       let commitCount;
       if ( knownCount !== null ) {
         commitCount = knownCount + 1;
-      } else {
+      }
+      else {
         try {
+          // Fetch the commit count if it wasn't already fetched by fetchRepoDetails. This
+          // is needed to generate the default commit message for the next upload, which
+          // includes the upload number (e.g. "Upload #4").
           const res   = await this.ghGet( `repos/${this.profile.login}/${repo}/commits`, { per_page: 1 } );
+          // If there's no Link header, the repo has only 1 commit (no pagination needed)
           const match = ( res.headers?.link || '' ).match( /page=(\d+)>; rel="last"/ );
+          // Add 1 to the count because the next commit will be one more than the current count.
           commitCount = match ? parseInt( match[1] ) + 1 : 2;
-        } catch {
-          commitCount = 2;
+        }
+        catch ( err ) {
+          if ( err.response?.status === 404 ) {
+            commitCount = 2;
+          }
+          else {
+            console.error( `Failed to fetch commit count for ${repo}:`, err );
+            throw err;
+          }
         }
       }
+      
+      // Finally update the default commit message (User can always edit it before the upload...)
       this.defaultCommitMessage = `Upload #${commitCount}${versionStr}`;
       this.commitMessage        = this.defaultCommitMessage;
+      
     },
 
   },
@@ -32105,35 +32339,44 @@ const githubUploadMixin = {
 
     /** Resets all progress and result state back to the idle baseline. */
     resetProgress() {
+      
       this.uploadFailed = false;
       this.uploadComplete = false;
       this.wasCancelled = false;
       this.failedMessage = '';
       this.statusMessage = '';
       this.progress = { stage: '', total: 0, done: 0, percent: 0 };
+      
     },
 
     /** Aborts any in-progress upload and resolves any active rate-limit countdown. */
     cancel() {
+      
+      // Stop the main upload by aborting all in-flight blob requests
       if ( this.abortController ) {
         this.abortController.abort();
         this.abortController = null;
       }
+      // Stop the rate-limit countdown by aborting the signal that blocks workers during limits
       if ( this.rateLimitController ) {
         this.rateLimitController.abort();
         this.rateLimitController = null;
       }
+      // Resolve the rate-limit promise so workers aren't left hanging if a limit countdown was active
       if ( this.rateLimitResolve ) {
         this.rateLimitResolve();
         this.rateLimitResolve = null;
         this.rateLimitPromise = null;
       }
+      
+      // Reset the upload states...
       this.isSyncing = false;
       this.uploadComplete = false;
       this.uploadFailed = false;
       this.wasCancelled = this.progress.done > 0;
       this.statusMessage = '';
       this.progress = { stage: '', total: 0, done: 0, percent: 0 };
+      
     },
 
     /**
@@ -32141,8 +32384,11 @@ const githubUploadMixin = {
      * Refreshes commit count so the next default message is correct.
      */
     onCompleteBack() {
+    
       this.uploadComplete = false;
-      this.resetProgress();
+      this.resetProgress(); // just to be safe, though it should already be reset by the time we show the complete screen
+      
+      // Refresh the commit count so the next default message is correct (e.g. "Upload #2" instead of "Upload #1" on the next upload)
       const repoInfo = this.repos.find( r => r.name === this.selectedRepo );
       if ( repoInfo ) {
         repoInfo.commitCount = null;
@@ -32150,39 +32396,57 @@ const githubUploadMixin = {
           this.updateDefaultCommitMessage( this.selectedRepo, repoInfo.commitCount );
         });
       }
+      
     },
 
     /** Returns to the normal screen after a failed upload. */
     onFailedBack() {
       this.uploadFailed = false;
-      this.resetProgress();
+      this.resetProgress(); // just to be safe, though it should already be reset by the time we show the failed screen
     },
 
     /** Clears the blob cache for the current repo and starts a fresh upload. */
     async cleanUpload() {
+    
+      // Abort any in-flight requests from a previous attempt
+      this.cancel(); 
+      this.resetProgress();
       this.wasCancelled = false;
+      // Clear the blob cache
       await this.clearBlobCache( this.profile.login, this.selectedRepo );
+      
+      // Start a new upload
       this.uploadLibrary();
+      
     },
 
     /** Clears the error state and retries the upload. */
     retryUpload() {
+    
+      this.cancel(); // Clean up any lingering requests or rate-limit countdowns from the failed attempt
       this.uploadFailed = false;
       this.failedMessage = '';
+      
+      // Retry the upload with the existing cache.
       this.uploadLibrary();
+      
     },
 
     /** Uploads all library files to the selected GitHub repo as a single Git commit. */
     async uploadLibrary() {
+    
+      // Prevent multiple simultaneous uploads or a repo isn't selected (if that could happen, it would be a bug).
       if ( this.isSyncing || !this.canUpload ) return;
-      this.isSyncing = true;
-      this.wasCancelled = false;
-      this.uploadFailed = false;
-      this.uploadComplete = false;
+      
+      this.isSyncing       = true;
+      this.wasCancelled    = false;
+      this.uploadFailed    = false;
+      this.uploadComplete  = false;
       this.abortController = new AbortController();
-      const { signal } = this.abortController;
+      const { signal }     = this.abortController;
 
       try {
+      
         const owner = this.profile.login;
         const repo  = this.selectedRepo;
         const { files, hasBooks } = await this.getFiles( { array: true } );
@@ -32213,7 +32477,7 @@ const githubUploadMixin = {
         // ORGANIZE TREE
         // Git trees describe the directory structure by mapping file paths to blob SHAs.
         // We build the tree in chunks so the progress bar moves during this step.
-        // The first chunk has no base_tree — this creates a clean slate and removes
+        // The first chunk has no base_tree, which creates a clean slate and removes
         // any stale filenames left over from cache-busted files in prior uploads.
         this.progress.stage   = 'Organizing files';
         this.statusMessage    = 'Organizing files...';
@@ -32223,20 +32487,38 @@ const githubUploadMixin = {
         let currentTreeSha = null;
         const totalChunks  = Math.ceil( files.length / TREE_CHUNK );
         let chunksDone     = 0;
-
+        
+        // Build the tree in chunks so we can update the progress bar as we go. Each chunk
+        // is a separate API call, but they have to be sequential since each one depends
+        // on the previous one's result.
         for ( let i = 0; i < files.length; i += TREE_CHUNK ) {
+          
           if ( signal.aborted ) return;
+          
+          // Build the tree
           const chunk = files.slice( i, i + TREE_CHUNK );
           const treeParams = {
             owner, repo,
             tree: chunk.map( ( f, j ) => ({ path: f.path, mode: '100644', type: 'blob', sha: blobShas[i + j] }) ),
           };
+          
+          // For subsequent chunks, use the previous tree as the base; first chunk has no base_tree to create a clean slate.
           if ( currentTreeSha ) treeParams.base_tree = currentTreeSha;
+
+          // Create the tree in GitHub, which gives us a new tree SHA that represents the
+          // directory structure for all files uploaded so far. The final tree SHA after
+          // the last chunk is what we point the commit to.
           const { data: tree } = await this.octokit.rest.git.createTree( treeParams );
+
+          // Store the tree SHA for the next chunk's base_tree
           currentTreeSha = tree.sha;
+          // Update counter
           chunksDone++;
+          // Update progress bar...
           this.progress.percent = 72 + Math.round( ( chunksDone / totalChunks ) * 15 );
+          // Update the status message with the file count progress, e.g. "Organizing files... 150/450"
           this.statusMessage = `Organizing files… ${Math.min( i + TREE_CHUNK, files.length )}/${files.length}`;
+          
         }
 
         // COMMIT AND PUSH
@@ -32245,59 +32527,78 @@ const githubUploadMixin = {
         this.statusMessage    = 'Saving...';
         this.progress.percent = 88;
 
+        // Create the commit object linking the tree, parent commit, and message
         const { data: commit } = await this.octokit.rest.git.createCommit({
           owner, repo,
           message: this.commitMessage.trim() || this.defaultCommitMessage,
           tree: currentTreeSha,
-          parents: [latestCommitSha],
+          parents: [latestCommitSha], // Link to the previous commit to maintain history
         });
+        // Move the branch pointer to the new commit, which publishes the changes to GitHub
         await this.octokit.rest.git.updateRef({ owner, repo, ref: `heads/${branch}`, sha: commit.sha });
 
-        // Optimistically mark the repo as building so the UI reflects the new state
-        // before the next Pages poll comes back with confirmation.
+        // Optimistically update the (local) repo state so the UI reflects the new state immediately,
+        // rather than waiting for the Pages poll to confirm (provides faster user feedback).
+        // The pollPagesBuild will verify and correct this if needed.
         const repoEntry = this.repos.find( r => r.name === repo );
         if ( repoEntry ) {
-          repoEntry.pushedAt    = new Date().toISOString();
-          repoEntry.pagesStatus = 'building';
+          repoEntry.pushedAt    = new Date().toISOString(); // Mark when we just pushed
+          repoEntry.pagesStatus = 'building'; // GitHub Pages auto-builds after a push
         }
 
-        // DONE — sleep long enough for the progress bar transition and Done stage to be visible
+        // Mark upload as complete and show the final "Done" stage for a moment so users see the progress bar finish
         this.progress.stage   = 'Done';
         this.progress.percent = 100;
-        this.statusMessage    = '';
-        await this.$nextTick();
-        await this.sleep( 1200 );
+        this.statusMessage    = ''; // Clear the status message
+        await this.$nextTick(); // Force Vue to render the "Done" stage before sleeping
+        await this.sleep( 1200 ); // Let the user see the completed progress bar
 
+        // Show the completion screen with the Pages URL and record the upload timestamp
         this.completedPagesUrl = repoEntry?.pagesUrl || null;
         this.uploadTimestamp   = Date.now();
         this.uploadComplete    = true;
+        // Monitor the GitHub Pages build status in the background; UI will update when it's built
         this.pollPagesBuild( owner, repo );
 
-      } catch ( err ) {
+      }
+      // Any error that lands here is unexpected and unrecoverable, so we show the error screen with instructions to retry.
+      catch ( err ) {
+      
         if ( signal.aborted ) return;
         console.error( err );
 
-        // Network errors and 401/404 responses are unrecoverable — surface them to the user.
+        // Network errors and 401/404 responses are unrecoverable, so surface them to the user.
         // Rate limit errors that timed out also land here via the "after" message check.
         // Anything else (e.g. a transient 5xx) is logged but doesn't kill the upload.
         const isNetworkError = err instanceof TypeError && !err.response;
-        const isFatal =
-          isNetworkError ||
-          err?.message?.includes( 'after' ) ||
-          err?.response?.status === 401 ||
-          err?.response?.status === 404;
+        const isFatal = isNetworkError ||
+                        err?.message?.includes( 'after' ) ||
+                        err?.response?.status === 401 ||
+                        err?.response?.status === 404;
 
         if ( isFatal ) {
-          this.uploadFailed  = true;
-          this.failedMessage = isNetworkError
-            ? 'Network connection lost. Check your connection and retry.'
-            : ( err?.message || 'Unknown error' );
-        } else {
+        
+          this.uploadFailed = true;
+          
+          if ( isNetworkError ) {
+            this.failedMessage = 'Network connection lost. Check your connection and retry.';
+          }
+          else {
+            this.failedMessage = err?.message || 'Unknown error';
+          }
+          
+        }
+        else {
           console.warn( 'Recovered upload error:', err );
         }
-      } finally {
+        
+      }
+      // Reset the syncing flag so the UI and upload button become enabled again, regardless of how the upload finished.
+      // Abort controllers are cleaned up separately via cancel() when the user retries or leaves.
+      finally {
         this.isSyncing = false;
       }
+      
     },
 
     /**
@@ -32306,20 +32607,25 @@ const githubUploadMixin = {
      * @returns {string}
      */
     toBase64( content ) {
+    
       const isBuffer = content instanceof ArrayBuffer;
       const isUint8  = content instanceof Uint8Array;
+      
       if ( isBuffer || isUint8 ) {
-        const bytes = isBuffer ? new Uint8Array( content ) : content;
+      
         let binary = '';
+        const bytes = isBuffer ? new Uint8Array( content ) : content;
         for ( let i = 0; i < bytes.byteLength; i++ ) binary += String.fromCharCode( bytes[i] );
         return btoa( binary );
+        
       }
+      
       return btoa( unescape( encodeURIComponent( content ) ) );
     },
 
     /**
      * Uploads a single file as a Git blob, with retry logic for rate limits and server errors.
-     * Rate-limit waits are shared across all concurrent workers via `rateLimitPromise` —
+     * Rate-limit waits are shared across all concurrent workers via `rateLimitPromise`, so
      * only the first worker to hit the limit starts the countdown; the rest just await it.
      * @param {Object} file
      * @param {string} owner
@@ -32328,19 +32634,23 @@ const githubUploadMixin = {
      * @returns {Promise<string|null>} Blob SHA, or null if the upload was aborted
      */
     async uploadSingleBlob( file, owner, repo, signal ) {
+      // Setup retry limits and backoff timing
       const MAX_RETRIES            = 5;
       const MAX_RATE_LIMIT_RETRIES = 8;
-      let delay            = 1000;
+      let delay            = 1000; // Exponential backoff for 5xx errors
       let attempt          = 0;
       let rateLimitRetries = 0;
 
+      // Retry loop for transient failures
       while ( attempt < MAX_RETRIES ) {
+        // Check if the upload was cancelled before making the request
         if ( signal.aborted ) return null;
 
         let res;
         try {
-          // Combine the main cancel signal with the rate-limit signal so in-flight requests
-          // can be dropped the moment the first 429 lands, without cancelling the whole upload
+          // Send the blob to GitHub. Combine the main cancel signal with the rate-limit signal
+          // so in-flight requests can be dropped the moment the first 429 lands, without
+          // cancelling the whole upload (allowing other workers to continue).
           res = await axios({
             method: 'post',
             url: `https://api.github.com/repos/${owner}/${repo}/git/blobs`,
@@ -32351,62 +32661,92 @@ const githubUploadMixin = {
             },
             data: { content: this.toBase64( file.content ?? '' ), encoding: 'base64' },
             signal: AbortSignal.any([ signal, this.rateLimitController.signal ]),
-            validateStatus: () => true,
+            validateStatus: () => true, // Don't throw on any status code; we handle them below
           });
-        } catch ( err ) {
+        }
+        catch ( err ) {
+          // Request was aborted (either by user or by rate limit)
           if ( signal.aborted ) return null;
-          // Aborted by rateLimitController — another worker already set up the countdown
+          // If aborted by rateLimitController, another worker already set up the countdown
           if ( this.rateLimitPromise ) await this.rateLimitPromise;
+          // Stagger our retry to avoid thundering herd when rate limit clears
           await this.sleep( 500 + Math.random() * 1500 );
           continue;
         }
 
-        if ( res.status < 300 ) return res.data.sha;
+        // SUCCESS
+        if ( res.status < 300 ) {
+          return res.data.sha;
+        }
 
         // RATE LIMIT (403 / 429)
         if ( res.status === 403 || res.status === 429 ) {
-          if ( ++rateLimitRetries > MAX_RATE_LIMIT_RETRIES )
+          if ( ++rateLimitRetries > MAX_RATE_LIMIT_RETRIES ) {
             throw new Error( `Upload failed: rate limit did not clear after ${MAX_RATE_LIMIT_RETRIES} attempts` );
+          }
 
+          // Calculate how long to wait. GitHub sends Retry-After in seconds; enforce a 15s floor
+          // since GitHub sometimes under-reports the actual cooldown.
           const retryAfter = res.headers['retry-after'];
-          // Enforce a 15s floor — GitHub sometimes under-reports the actual cooldown in the header
           const waitMs = Math.max( retryAfter ? parseInt( retryAfter ) * 1000 : 60000, 15000 );
 
           // First worker to hit the limit sets up the countdown and drops all other in-flight
-          // blob requests immediately — so we send at most one 429 instead of up to ten.
+          // requests immediately, so we send at most one 429 instead of up to ten (once per worker).
           if ( !this.rateLimitPromise ) {
+            // Abort any in-flight requests from other workers
             this.rateLimitController.abort();
             this.rateLimitController = new AbortController();
+
+            // Create a shared countdown promise so all workers can wait together
             this.rateLimitPromise = new Promise( resolve => {
+              
               this.rateLimitResolve = resolve;
+              
+              // Update the GUI with a countdown timer so users know when the upload will
+              // resume. This is updated every second with the remaining time.
               let remaining = Math.round( waitMs / 1000 );
-              this.statusMessage = `API rate limit exceeded — Continuing in ${remaining}s...`;
+              this.statusMessage = `API rate limit exceeded. Continuing in ${remaining}s...`;
+
+              // Update the UI every second with the remaining time
               const tick = setInterval( () => {
+              
                 if ( signal.aborted ) {
                   clearInterval( tick );
                   resolve();
                   return;
                 }
+                
+                // Update the remaining time
                 remaining--;
+                
+                // If the limit has cleared, resolve the promise to 
+                // wakeup the workers and clear the countdown.
                 if ( remaining <= 0 ) {
                   clearInterval( tick );
                   this.rateLimitPromise = null;
                   this.rateLimitResolve = null;
                   resolve();
-                } else {
-                  this.statusMessage = `API rate limit exceeded — Continuing in ${remaining}s...`;
                 }
+                else {
+                  // Update the GUI with a countdown timer so users know when the upload will
+                  // resume. This is updated every second with the remaining time.
+                  this.statusMessage = `API rate limit exceeded. Continuing in ${remaining}s...`;
+                }
+                
               }, 1000 );
             });
           }
 
+          // Wait for the countdown to finish (either this worker's countdown or another's)
           await this.rateLimitPromise;
-          // Stagger wakeup — prevents all workers from retrying simultaneously and re-triggering the limit
+          // Stagger the wakeup so workers don't all retry at once and re-trigger the rate limit
           await this.sleep( 500 + Math.random() * 1500 );
-          continue;
+          
+          continue; 
+          
         }
 
-        // SERVER ERROR (5xx) — exponential backoff, then retry
+        // SERVER ERROR (5xx) - transient, back off exponentially and retry
         if ( res.status >= 500 ) {
           await this.sleep( delay );
           delay *= 2;
@@ -32414,15 +32754,17 @@ const githubUploadMixin = {
           continue;
         }
 
+        // OTHER ERROR - unrecoverable
         throw new Error( `Upload failed: ${res.status} ${res.statusText}` );
       }
 
+      // Exhausted all retries
       throw new Error( `Upload failed after ${MAX_RETRIES} retries` );
     },
 
     /**
      * Hashes all files, deduplicates against the IDB cache, and uploads new blobs concurrently.
-     * Blob SHAs are content-addressable and permanent on GitHub — unchanged files are always skipped.
+     * Blob SHAs are content-addressable and permanent on GitHub, so unchanged files are always skipped.
      * @param {Array} files
      * @param {string} owner
      * @param {string} repo
@@ -32431,35 +32773,49 @@ const githubUploadMixin = {
      * @returns {Promise<string[]>} Blob SHAs in the same order as the input files
      */
     async uploadBlobs( files, owner, repo, repoCreatedAt, signal ) {
+    
       this.rateLimitController = new AbortController();
+      
       this.progress.stage = 'Uploading files';
       this.statusMessage  = 'Preparing files...';
 
-      // Wipe the IDB cache if the repo was deleted and recreated — its blob SHAs
+      // Wipe the IDB cache if the repo was deleted and recreated, since its blob SHAs
       // are gone from GitHub even though the hashes still match locally.
       await this.idbValidateRepoCache( owner, repo, repoCreatedAt );
       const blobCache = await this.idbCacheLoad( owner, repo );
 
       // Hash all files upfront so we know which ones are already on GitHub and can be skipped
       for ( let i = 0; i < files.length; i++ ) {
+      
         if ( signal.aborted ) return [];
-        const c = files[i].content;
+        const content = files[i].content;
         let bytes;
-        if ( c instanceof ArrayBuffer )     bytes = new Uint8Array( c );
-        else if ( c instanceof Uint8Array ) bytes = c;
-        else                                bytes = new TextEncoder().encode( c || '' );
+
+        if ( content instanceof ArrayBuffer ) {
+          bytes = new Uint8Array( content );
+        }
+        else if ( content instanceof Uint8Array ) {
+          bytes = content;
+        }
+        else {
+          bytes = new TextEncoder().encode( content || '' );
+        }
+
+        // Compute the Git blob SHA-1 for the file content, which is how GitHub identifies
+        // blobs and allows us to skip uploads for unchanged files.
         files[i].contentHash = await this.gitBlobShaBytes( bytes );
+        
       }
 
       this.statusMessage = 'Uploading files...';
 
-      // Shared mutable state for the worker pool — workers atomically claim files by
+      // Shared mutable state for the worker pool. Workers atomically claim files by
       // incrementing nextIndex, so there's no duplicate work and no coordination overhead.
       const blobShas  = new Array( files.length );
       let completed   = 0;
       let nextIndex   = 0;
       const CONCURRENCY = 10;
-
+      
       const runWorker = async () => {
         while ( true ) {
           if ( signal.aborted ) return;
@@ -32470,68 +32826,104 @@ const githubUploadMixin = {
             await this.sleep( Math.random() * 1000 );
           }
 
+          // Claim the next file by atomically incrementing nextIndex. 
+          // If we've gone through all files, exit the loop.
           const i = nextIndex++;
           if ( i >= files.length ) return;
 
           const file = files[i];
 
+          // Skip files that are already on GitHub
           if ( blobCache[file.contentHash] ) {
-            // Already on GitHub — use the cached SHA, no upload needed
             blobShas[i] = blobCache[file.contentHash];
-          } else {
+          }
+          // Upload the file as a blob and save the SHA to the cache for future uploads
+          else {
+
             const sha = await this.uploadSingleBlob( file, owner, repo, signal );
+            // If the upload failed (aborted or threw), exit the worker
             if ( !sha ) return;
+
+            // Store the blob SHA for use in tree construction
             blobShas[i] = sha;
+            // Cache the SHA in memory so we don't re-upload identical files in this run
             blobCache[file.contentHash] = sha;
+            // Persist to IndexedDB so future uploads can skip files that are already on GitHub
             await this.idbCacheSave( owner, repo, file.contentHash, sha );
+
           }
 
           completed++;
           this.progress.done    = completed;
           this.progress.percent = Math.round( ( completed / files.length ) * 70 );
           this.statusMessage    = `Uploading ${completed}/${files.length}`;
+          
         }
       };
 
+      // Spawn CONCURRENCY workers in parallel; each claims files by index and uploads them until all are done
       await Promise.all( Array.from( { length: CONCURRENCY }, runWorker ) );
+
+      // Return the array of blob SHAs, populated atomically by all workers during the upload
       return blobShas;
+      
     },
 
     /**
      * Polls the GitHub Pages build status every 5 seconds until it resolves, errors, or times out at 2 minutes.
-     * GitHub Pages doesn't deploy instantly after a push — it kicks off a build job that takes a moment.
+     * GitHub Pages doesn't deploy instantly after a push; it kicks off a build job that takes a moment.
      * @param {string} owner
      * @param {string} repo
      */
     async pollPagesBuild( owner, repo ) {
+
+      // Prevent concurrent polls; only one poll sequence should run at a time
       if ( this.isPolling ) return;
       this.isPolling = true;
       const MAX_POLLS = 24; // 24 × 5s = 2 minutes before we stop checking
+
       try {
         for ( let i = 0; i < MAX_POLLS; i++ ) {
+        
+          // Wait 5 seconds before checking the build status
           await new Promise( r => setTimeout( r, 5000 ) );
+
+          // Stop polling if the component unmounted or the user navigated away
           if ( this._pollAborted ) break;
+
           try {
+            // Fetch the current Pages deployment status
             const res   = await this.ghGet( `repos/${owner}/${repo}/pages` );
             const pages = res.data;
             const repoEntry = this.repos.find( r => r.name === repo );
 
+            // Update the repo entry with the latest Pages URL and status
             if ( repoEntry ) {
               repoEntry.pagesUrl    = pages.html_url;
               repoEntry.pagesStatus = pages.status;
-              // Keep the URL on the complete screen live as it comes in
-              if ( this.uploadComplete && pages.html_url ) this.completedPagesUrl = pages.html_url;
+              // Keep the complete screen URL live as the Pages URL comes in
+              if ( this.uploadComplete && pages.html_url ) {
+                this.completedPagesUrl = pages.html_url;
+              }
             }
 
+            // Stop polling once the build completes or fails
             if ( pages.status === 'built' || pages.status === 'errored' ) {
-              if ( pages.status === 'errored' ) this.statusMessage = 'Site publish failed — check GitHub Pages settings.';
+              if ( pages.status === 'errored' ) {
+                this.statusMessage = 'Site publish failed. Check GitHub Pages settings.';
+              }
               break;
             }
-          } catch { break; }
+          }
+          // Stop polling on any API error (auth, rate limit, 404, etc.)
+          catch { break; }
+          
         }
-      } finally {
+      }
+      finally {
         this.isPolling = false;
       }
+
     },
 
   },
@@ -39135,13 +39527,13 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 const aleLibraryView = /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]]);
 
-const aleGallery     = () => __vitePreload(() => import('./gallery-root.ypCqSD9u.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
-const aleCollections = () => __vitePreload(() => import('./gallery-collections.hTn64hk8.js'),true?__vite__mapDeps([18,1,2,3,12,5,6,7,8,13,4,15,16,19]):void 0,import.meta.url);
-const aleCategories  = () => __vitePreload(() => import('./gallery-categories.1sYWzvhx.js'),true?__vite__mapDeps([20,2,3,4,10,11,12,5,6,7,8,13,15,16,21]):void 0,import.meta.url);
-const aleSeries      = () => __vitePreload(() => import('./gallery-series.kuHxrp2K.js'),true?__vite__mapDeps([22,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,23]):void 0,import.meta.url);
-const aleAuthors     = () => __vitePreload(() => import('./gallery-authors._AlovL5u.js'),true?__vite__mapDeps([24,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,25]):void 0,import.meta.url);
-const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.BAR3Aunf.js'),true?__vite__mapDeps([26,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,27]):void 0,import.meta.url);
-const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.3JvcWSrC.js'),true?__vite__mapDeps([28,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,29]):void 0,import.meta.url);
+const aleGallery     = () => __vitePreload(() => import('./gallery-root.CNMtGF5-.js'),true?__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]):void 0,import.meta.url);
+const aleCollections = () => __vitePreload(() => import('./gallery-collections.B9j2HE_B.js'),true?__vite__mapDeps([18,1,2,3,12,5,6,7,8,13,4,15,16,19]):void 0,import.meta.url);
+const aleCategories  = () => __vitePreload(() => import('./gallery-categories.PBqMaBaD.js'),true?__vite__mapDeps([20,2,3,4,10,11,12,5,6,7,8,13,15,16,21]):void 0,import.meta.url);
+const aleSeries      = () => __vitePreload(() => import('./gallery-series.Dwm8ZDjq.js'),true?__vite__mapDeps([22,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,23]):void 0,import.meta.url);
+const aleAuthors     = () => __vitePreload(() => import('./gallery-authors.CY3QTk5P.js'),true?__vite__mapDeps([24,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,25]):void 0,import.meta.url);
+const aleNarrators   = () => __vitePreload(() => import('./gallery-narrators.D8JpGY_I.js'),true?__vite__mapDeps([26,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,27]):void 0,import.meta.url);
+const alePublishers  = () => __vitePreload(() => import('./gallery-publishers.DiyNMn8R.js'),true?__vite__mapDeps([28,1,2,3,9,10,11,12,5,6,7,8,13,14,4,15,16,29]):void 0,import.meta.url);
 
 const allRoutes = {
   library: { 

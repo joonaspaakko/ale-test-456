@@ -491,7 +491,7 @@ function startOfISOWeekYear(date, options) {
  * const result = isDate({})
  * //=> false
  */
-function isDate(value) {
+function isDate$1(value) {
   return (
     value instanceof Date ||
     (typeof value === "object" &&
@@ -531,7 +531,7 @@ function isDate(value) {
  * //=> false
  */
 function isValid(date) {
-  return !((!isDate(date) && typeof date !== "number") || isNaN(+toDate(date)));
+  return !((!isDate$1(date) && typeof date !== "number") || isNaN(+toDate(date)));
 }
 
 /**
@@ -2067,7 +2067,7 @@ const unescapedLatinCharacterRegExp = /[a-zA-Z]/;
  * const result = format(new Date(2014, 6, 2, 15), "h 'o''clock'")
  * //=> "3 o'clock"
  */
-function format(date, formatStr, options) {
+function format$1(date, formatStr, options) {
   const defaultOptions = getDefaultOptions();
   const locale = options?.locale ?? defaultOptions.locale ?? enUS;
 
@@ -3640,7 +3640,7 @@ function transformScore(result, data) {
   data.score = result.score;
 }
 
-function format$1(
+function format(
   results,
   docs,
   {
@@ -3760,7 +3760,7 @@ class Fuse {
       results = results.slice(0, limit);
     }
 
-    return format$1(results, this._docs, {
+    return format(results, this._docs, {
       includeMatches,
       includeScore
     })
@@ -4129,7 +4129,7 @@ const isEmptyObject = (val) => {
  *
  * @returns {boolean} True if value is a Date, otherwise false
  */
-const isDate$1 = kindOfTest('Date');
+const isDate = kindOfTest('Date');
 
 /**
  * Determine if a value is a File
@@ -4827,7 +4827,7 @@ const utils$1 = {
   isResponse,
   isHeaders,
   isUndefined,
-  isDate: isDate$1,
+  isDate,
   isFile,
   isReactNativeBlob,
   isReactNative,
@@ -8583,4 +8583,4 @@ const helpers = {
   }
 };
 
-export { Fuse as F, Url$1 as U, millisecondsInMinute as a, minutesInDay as b, constructFrom as c, differenceInCalendarDays as d, minutesInMonth as e, getDefaultOptions as f, getTimezoneOffsetInMilliseconds as g, format as h, axios as i, secondsToTimeString as j, timeStringToSeconds as k, helpers as l, millisecondsInHour as m, normalizeDates as n, startOfDay as s, toDate as t };
+export { Fuse as F, Url$1 as U, millisecondsInMinute as a, minutesInDay as b, constructFrom as c, differenceInCalendarDays as d, minutesInMonth as e, getDefaultOptions as f, getTimezoneOffsetInMilliseconds as g, format$1 as h, axios as i, secondsToTimeString as j, timeStringToSeconds as k, helpers as l, millisecondsInHour as m, normalizeDates as n, startOfDay as s, toDate as t };

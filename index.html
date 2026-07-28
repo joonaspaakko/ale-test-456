@@ -49,10 +49,10 @@
             <meta name="msapplication-config" content="favicons/browserconfig.xml">
             <meta name="theme-color" content="#f29a33">
             <title>My Audible Library</title>
-            <script type="module" src="https://esm.sh/@khmyznikov/pwa-install"></script>
+            <script src="assets/js/pwa-install.bundle.js"></script>
             <script>
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.1785175849605.js')
+            navigator.serviceWorker.register('service-worker.1785266489103.js')
             .then(function(registration) {
               console.log('Registration successful, scope is:', registration.scope);
             })
@@ -62,17 +62,12 @@
           }
         </script>
             <script src="assets/js/lodash.min.js"></script>
-            <link id="ale-css" rel="stylesheet" href="assets/gallery.BThtZuqW.css">
+            <link id="ale-css" rel="stylesheet" href="assets/gallery.F8P6JOsk.css">
           </head>
           <body>
-            <div id="audible-library-extractor" data-version="1.0.0" data-cache-id="1785175849605"></div>
-            <!-- manual-apple / manual-chrome keep the install dialog from popping up on its own.
-                 It's opened from the install button in the gallery's global settings instead.
-                 Has to live here rather than in the settings drawer: the element listens for the
-                 browser's install event when it connects, which happens long before the drawer
-                 is ever opened. -->
-            <pwa-install manual-apple manual-chrome manifest-url="app.webmanifest" icon="favicons/android-chrome-192x192.png" name="My Audible Library"></pwa-install>
-            <script id="ale-js" src="assets/gallery.Bk7Oc2xS.js" type="module"></script>
+            <div id="audible-library-extractor" data-version="1.0.0" data-cache-id="1785266489103"></div>
+            <pwa-install manual-apple manual-chrome manual-how-to manifest-url="app.webmanifest" icon="favicons/android-chrome-192x192.png" name="My Audible Library"></pwa-install>
+            <script id="ale-js" src="assets/gallery.7SGHX3j8.js" type="module"></script>
             <noscript>This library requires javascript to work!</noscript>
           </body>
           </html>

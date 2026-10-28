@@ -51,8 +51,12 @@
             <title>My Audible Library</title>
             <script src="assets/js/pwa-install.bundle.js"></script>
             <script>
+              window.addEventListener('beforeinstallprompt', function( e ) { e.preventDefault(); window.pwaPromptEvent = e; });
+              window.addEventListener('appinstalled', function() { window.pwaPromptEvent = null; });
+            </script>
+            <script>
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.1788211714199.js')
+            navigator.serviceWorker.register('service-worker.1793214534201.js')
             .then(function(registration) {
               console.log('Registration successful, scope is:', registration.scope);
             })
@@ -62,12 +66,12 @@
           }
         </script>
             <script src="assets/js/lodash.min.js"></script>
-            <link id="ale-css" rel="stylesheet" href="assets/gallery.-jzQDcgi.css">
+            <link id="ale-css" rel="stylesheet" href="assets/gallery.BNabMO_A.css">
           </head>
           <body>
-            <div id="audible-library-extractor" data-version="1.2.15" data-cache-id="1788211714199"></div>
+            <div id="audible-library-extractor" data-version="1.2.17" data-cache-id="1793214534201"></div>
             <pwa-install manual-apple manual-chrome manual-how-to manifest-url="app.webmanifest" icon="favicons/android-chrome-192x192.png" name="My Audible Library"></pwa-install>
-            <script id="ale-js" src="assets/gallery.BpXw-oNQ.js" type="module"></script>
+            <script id="ale-js" src="assets/gallery.5_5HfpEL.js" type="module"></script>
             <noscript>This library requires javascript to work!</noscript>
           </body>
           </html>
